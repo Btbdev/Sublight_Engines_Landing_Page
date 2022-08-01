@@ -1,7 +1,7 @@
 /* CSS STRUCTURE TEMPLATE */
 .selector {
     /* POSITIONING */
-    position: absolute, relative, fixed, etc;
+    position: absolute, relative, fixed;
     z-index: 10;
     top: 0;
     right: 0;
@@ -18,11 +18,98 @@
     background: - - - ;
     color: - - - ;
     /* TEXT */
-    font-family: - - - ;
-    font-size: - - - ;
+    font-family: 'Roboto';
+    font-size: 'normal';
     line-height: - - - ;
-    text-align: - - - ;
+    text-align: 'center';
+    text-transform: 'uppercase';
     /* OTHER */
     cursor: - - - ;
-};
+}
+
+
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    background:rgba(0, 0, 0, 0.69);
+    left: 0px;
+    top: 24px;
+}
+
+
+main {
+    
+}
+
+.rectangle1 {
+    position: relative;
+    height: 960px;
+    background-color: #9e9696;
+    top: 0px;
+    left: 0px
+}
+
+.rectangle2 {
+    position: relative;
+    height: 711px;
+    background-color: #383838;
+    top: 960px;
+    left: 0px;
+}
+
+
+
+.rectangle4 {
+    position: relative;
+    height: 853px;
+    background-color: #FF7630;
+    top: 2242px;
+    left: 0px;
+}
+
+
+
+.rectangle6 {
+    position: relative;
+    height: 254px;
+    background-color: #292929;
+    top: 3899;
+    left: 0px;
+}
+
+.topNav {
+    float: right;
+}
+
+
+
+.img {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+
+
+
+.navbutton {
+    /*OUR services */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
 
