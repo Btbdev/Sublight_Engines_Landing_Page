@@ -37,7 +37,7 @@ body {
 /* Rectangle 1 */
 .rectangle1 {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 68px;
     background:rgba(0, 0, 0, 0.69);
     margin-top: 24px;
@@ -46,10 +46,11 @@ body {
 
 .test {
     position: absolute;
-    
+    text-align: center;
     left: 0px;
     width: 100%;
     top: 653px;
+    display: block;
 }
 
 
@@ -117,6 +118,7 @@ h1 {
 .bckimage {
     position: absolute;
     height: 960px;
+    Width: 100%;
     margin-top: 0px;
     margin-left: 0px;
     z-index: -1;
@@ -124,9 +126,9 @@ h1 {
 
 .rectangle2 {
     position: absolute;
-    display: grid;
+    
     z-index: -1;
-    width: 1440px;
+    width: 100%;
     height: 711px;
     background-color: #383838;
     top: 960px;
@@ -137,7 +139,6 @@ h1 {
 .container {
     
     width: 100%;
-    
     left: 0px;
     top: 1040px;
     text-align: center;
@@ -145,9 +146,7 @@ h1 {
 
 .container span {
     
-    height: 29px;
-    : ;
-    
+    height: 29px;   
     display: block;
     white-space: nowrap;
     font-family: 'Roboto';
@@ -161,20 +160,9 @@ h1 {
     color: #FFFFFF;
 }
 
-
-.container2 {
-    display: inline;
-    
-    justify-content: space-evenly;
-}
-
-
-
 h2 {
-    
-    
+       
     height: 53px;
-    
     top: 1073px;
     white-space: nowrap;
     font-family: 'Roboto';
@@ -190,21 +178,55 @@ h2 {
     color: #FFFFFF;
 }
 
-.design {
-    position: absolute;
-    width: 250px;
-    height: 250px;
+.container2 {
+    display: block;
+    width: 100%;
     left: 180px;
     top: 1242px;
+    text-align: center;
 }
 
+
+
+
+
+.design {
+    
+    width: 250px;
+    height: 250px;
+    
+}
+
+.container3 {
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: 1538px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.container3 span {
+    
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
 
 
 
 .rectangle3 {
     position: absolute;
     height: 853px;
-    width: 1440px;
+    width: 100%;
     background-color: #FF7630;
     margin-top: 2242px;
     margin-left: 0px;
@@ -214,14 +236,73 @@ h2 {
 
 .rectangle8 {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 254px;
     background-color: #292929;
     margin-top: 3899px;
     margin-left: 0px;
 }
 
-.h4 {
+
+/************ text section *****************/
+.textsection {
+    text-align: left;
+    width: 100%;
+    left: 71px;
+    top: 1700px;
+   
+}
+
+.textsection span {
+    position: absolute;
+    display: block;
+    top: 1080px;
+    left: 71px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #292929
+}
+
+.textsection p {
+    position: absolute;
+    display: block;
+    top: 1899px;
+    width: 586px;
+    left: 71px
+}
+
+.textsection img {
+    position: absolute;
+    width: 615px;
+    height: 411px;
+    margin-top: 1751px;
+    margin-left: 748px;
+    z-index: 1;
+    padding-left: 87px;
+}
+
+h3 {
+    position: absolute;
+    left: 71px;
+    top: 1833px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+/*********** end text section **************/
+
+h4 {
     position: absolute;
     width: 552px;
     height: 53px;
@@ -235,13 +316,14 @@ h2 {
     line-height: 53px;
     /* identical to box height */
 
-
-
     color: #FF7630;
 }
 
 
 
+
+
+/************** navigation bar ****************/
 .navbutton {
     list-style-type: none;
     display: inline;
@@ -294,7 +376,7 @@ h2 {
     left: 1191px;
     top: 49px;
 }
-
+/* End navigation bar */
 
 .copyright {
     position: absolute;
