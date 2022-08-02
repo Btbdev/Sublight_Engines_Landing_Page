@@ -37,8 +37,6 @@ body {
 /* Rectangle 1 */
 .rectangle1 {
     position: absolute;
-    grid-column-start: 1;
-    grid-column-end: 5;
     width: 1440px;
     height: 68px;
     background:rgba(0, 0, 0, 0.69);
@@ -46,19 +44,21 @@ body {
     margin-left: 0px;
 }
 
-.box {
-    width: 2500px;
-    top: 850px;
-    left: 305px;
+.test {
+    position: absolute;
+    
+    left: 0px;
+    width: 100%;
+    top: 653px;
 }
 
 
-.box > h3 {
-    position: absolute;
-    width: 325px;
-    height: 60px;
-    left: 557px;
-    top: 653px;
+
+.test span {
+    
+    
+    display: block;
+
     white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
@@ -66,21 +66,19 @@ body {
     font-size: 51px;
     line-height: 60px;
     /* identical to box height */
-
     text-align: center;
     text-transform: uppercase;
 
     color: #FFFFFF;
 }
 
-.box > h5 {
-    position: absolute;
+h1 {
+    
     width: 829px;
     height: 93px;
-    left: 305px;
-    top: 713px;
+    
     white-space: nowrap;
-    font-family:roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 79px;
@@ -88,7 +86,7 @@ body {
     /* identical to box height */
     text-align: center;
     text-transform: uppercase;
-
+    
     /* Sublight Engines/Orange */
 
     color: #FFFFFF;
@@ -104,11 +102,7 @@ body {
     z-index: 1;
 }
 
-.grid {
-    display: inline-grid;
-    
-    
-}
+
 
 .elevatorbutton {
     position: absolute;
@@ -130,12 +124,80 @@ body {
 
 .rectangle2 {
     position: absolute;
+    display: grid;
+    z-index: -1;
     width: 1440px;
     height: 711px;
     background-color: #383838;
     top: 960px;
     left: 0px;
+    align-self: center;
 }
+
+.container {
+    
+    width: 100%;
+    
+    left: 0px;
+    top: 1040px;
+    text-align: center;
+}
+
+.container span {
+    
+    height: 29px;
+    : ;
+    
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+
+.container2 {
+    display: inline;
+    
+    justify-content: space-evenly;
+}
+
+
+
+h2 {
+    
+    
+    height: 53px;
+    
+    top: 1073px;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.design {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 180px;
+    top: 1242px;
+}
+
 
 
 
@@ -271,7 +333,7 @@ body {
 }
 
 
-.rectangle2 {
+.rectangle4 {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #383838;
@@ -282,11 +344,11 @@ body {
 
 }
 
-.rectangle2 > div{
+.rectangle4 > div{
     background: color #292929;;
     padding: 1em;
 }
-.rectangle2 > div:nth-child(odd) {
+.rectangle4 > div:nth-child(odd) {
     background-color:#292929;
 }
 
@@ -307,7 +369,7 @@ body {
     left: 67px;
     top: 4258px;
     left: 0;
-    background-color: blue;
+    
 }
 
 .right {
@@ -317,5 +379,5 @@ body {
     left: 1244px;
     top: 4233px;
     
-    background-color: red;
+
 }
