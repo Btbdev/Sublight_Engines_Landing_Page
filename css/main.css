@@ -278,7 +278,7 @@ h4 {
     width: 100%;
     left: 0px;
     text-align: center;  
-    padding-bottom: 20px; 
+    padding-bottom: 0px; 
 }
 
 .wrapperform span {
@@ -296,6 +296,8 @@ h4 {
     color: #292929;
 }
 
+
+
 h5 {
         
     white-space: nowrap;
@@ -308,6 +310,47 @@ h5 {
     text-transform: uppercase;
     
     color: #FF7630;
+}
+
+.form-control {
+    width: 498px;
+    height: 52px;
+    
+}
+
+.form-control-half {
+    width: 236px;
+    height: 52px;
+}
+
+.formtext {
+    text-align: left;
+}
+
+label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    
+    text-transform: uppercase;
+}
+
+.formbutton {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    background-color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
 }
 
 
