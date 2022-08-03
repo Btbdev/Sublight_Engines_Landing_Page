@@ -136,7 +136,7 @@
                     <div class="">
                     <form action="formtext" method="post">
                     
-                        <div class="wrapperform2">
+                        <div class="testform">
                             <label>Name *</label> <br>
                             <input type="text" name="name" class="form-control" value="Enter your full name">
                         </div>
@@ -144,17 +144,22 @@
                             <label>Email address *</label> <br>
                             <input type="text" name="email" class="form-control" value="yourname@company.com">
                         </div>
-                        <div>
-                        <label>Phone number</label> <br>
-                        <input type="number" name="phone" class="form-control-half" value="0(000)000-0000">
+                        <div class="wrapperform2">
+                            <div>
+                                <label>Phone number</label>
+                            
+                                <label for="language">Prefered language</label> <br>
+                            </div>
+                            
+                            <input type="text" name="phone" class="form-control-half" value="0 (000) 000 -0000">
+                            
+                            <select name="language" id="language" class="form-control-half">
+                                <option value="Select">Select</option>
+                                <option value="English">English</option>
+                                <option value="French">French</option>
                         </div>
-                        <div>
-                        <label for="language">Prefered language</label> <br>
-                        <select name="language" id="language" class="form-control-half">
-                            <option value="English">English</option>
-                            <option value="French">French</option> <br>
-                        </div>
-                        <div>
+
+                        <div class="formbutton2">
                         <input type="submit" value="Submit" class="form-control formbutton">
                         </div>
                         
