@@ -9,107 +9,598 @@
     display: block, flex, etc;
     overflow: visible, hidden, scroll, etc;
     box-sizing: border-box, etc;
-    width: - - -;
-    height: - - - ;
+    width: ;
+    height:  ;
     padding: 10px 10px;
     border: 0 solid color;
-    margin: - - - ;
+    margin: ;
     /* COLOR */
-    background: - - - ;
-    color: - - - ;
+    background:  ;
+    color: ;
     /* TEXT */
     font-family: 'Roboto';
-    font-size: 'normal';
-    line-height: - - - ;
-    text-align: 'center';
-    text-transform: 'uppercase';
+    font-size: normal;
+    line-height: ;
+    text-align: center;
+    text-transform: uppercase;
     /* OTHER */
-    cursor: - - - ;
+    cursor:  ;
 }
 
+body {
+    background-color: white;
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+}
 
-
-header {
+/* Rectangle 1 */
+.rectangle1 {
     position: absolute;
     width: 100%;
     height: 68px;
     background:rgba(0, 0, 0, 0.69);
-    left: 0px;
-    top: 24px;
-}
-
-
-main {
+    margin-top: 24px;
     
 }
 
-.rectangle1 {
-    position: relative;
-    height: 960px;
-    background-color: #9e9696;
-    top: 0px;
-    left: 0px
-}
-
-.rectangle2 {
-    position: relative;
-    height: 711px;
-    background-color: #383838;
-    top: 960px;
-    left: 0px;
-}
-
-
-
-.rectangle4 {
-    position: relative;
-    height: 853px;
-    background-color: #FF7630;
-    top: 2242px;
-    left: 0px;
-}
-
-
-
-.rectangle6 {
-    position: relative;
-    height: 254px;
-    background-color: #292929;
-    top: 3899;
-    left: 0px;
-}
-
-.topNav {
-    float: right;
-}
-
-
-
-.img {
-    display: flex;
+.test {
     position: absolute;
+    text-align: center;
     width: 100%;
-    top: 0px;
-    left: 0px;
+    top: 653px;
+    display: block;
+    
 }
 
-
-
-
-
-
-.navbutton {
-    /*OUR services */
+.test span {
+    
+    padding-bottom: 10px;
+    display: block;
+    white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-weight: 800;
+    font-size: 51px;
+    line-height: 60px;
     /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
+h1 {
+    
+    height: 93px;
+    align-items: center;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 79px;
+    line-height: 93px;
+    /* identical to box height */
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 30px;
+    
+    /* Sublight Engines/Orange */
 
     color: #FFFFFF;
 }
 
+/* logo_sublight */
+.logo {
+    position: absolute;
+    width: 465px;
+    height: 86px;
+    margin-top: 15px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+
+.bckimage {
+    position: absolute;
+    height: 960px;
+    Width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: -1;
+}
+
+.rectangle2 {
+    position: absolute;
+    width: 100%;
+    height: 711px;
+    background-color: #383838;
+    top: 960px;
+    left: 0px;
+    align-self: center;
+    padding-top: 40px;
+}
+
+.container {
+    
+    width: 100%;
+    left: 0px;
+    top: 1040px;
+    text-align: center;
+}
+
+.container span {
+    
+      
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+h2 {
+       
+    height: 53px;
+    top: 1073px;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    top: 1242px;
+    text-align: center;
+    margin-right: 25px;
+    padding-top: 50px;
+}
+
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 1538px;
+    padding-top: 50px;
+    
+}
+
+.container3 span {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+
+/************ orange section ************/
+.rectangle3 {
+    position: absolute;
+    height: 853px;
+    width: 100%;
+    background-color: #FF7630;
+    top: 2242px;
+    align-self: center;
+   
+}
+
+.wrapper {
+    
+    width: 100%;
+    left: 0px;
+    top: 2310px;   
+    text-align: center;  
+    padding-bottom: 20px; 
+}
+
+
+
+.wrapper span {
+    
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+h4 {
+        
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.img {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 50px;
+    left: 10px;
+    right: 20px;
+    
+}
+
+.button {
+    text-align: center;
+    padding-top: 70px;
+}
+/************ end orange section ************/
+
+/************ form section ************/
+
+.formsection {
+    position: absolute;
+    width: 100%;
+    top: 3199px;
+    align-self: center;
+}
+
+.wrapperform {
+    
+    width: 100%;
+    left: 0px;
+    text-align: center;  
+    padding-bottom: 0px; 
+}
+
+.wrapperform span {
+    
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #292929;
+}
+
+.testform {
+    justify-content: space-between;
+}
+
+.wrapperform2 {
+    display: inline-block;
+    
+}
+
+h5 {
+        
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FF7630;
+}
+
+.form-control {
+    width: 498px;
+    height: 52px;
+    
+}
+
+.form-control-half {
+    width: 236px;
+    height: 52px;
+}
+
+.formtext {
+    text-align: left;
+}
+
+label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A0A0A0;
+    padding-left: 1%;
+}
+
+.formbutton {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    background-color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+.formbutton2 {
+    padding-bottom: 50px;
+}
+
+
+
+/************ end form section ************/
+
+/************ card section **************/
+.rectangle8 {
+    position: absolute;
+    width: 100%;
+    height: 254px;
+    background-color: #292929;
+    margin-top: 3899px;
+    
+    text-align: center;
+    
+}
+
+.rectangle8 span {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    height: 254px;
+    line-height: 254px;
+    color: #FF7630;
+    
+    padding-right: 80px;
+    
+}
+
+.rectangle8 img {
+    position: absolute;
+    padding-top: 56px;
+    z-index: 1;
+    
+}
+/************ end card section *************/
+
+
+/************ text section *****************/
+.textsection {
+    text-align: left;
+    width: 100%;
+    left: 10%;
+    top: 1700px;
+   
+}
+
+.textsection span {
+    position: absolute;
+    display: block;
+    text-align: left;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 0px;
+    text-transform: uppercase;
+    color: #292929
+}
+
+.textsection p {
+    position: absolute;
+    display: block;
+    top: 1899px;
+    width: 586px;
+    left: 10%
+}
+
+.textsection img {
+    position: absolute;
+    width: 615px;
+    height: 411px;
+    margin-top: 1751px;
+    right: 8%;
+    z-index: 1;
+    
+}
+
+h3 {
+    position: absolute;
+    left: 10%;
+    top: 1833px;
+    padding: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+/*********** end text section **************/
+
+
+
+
+
+
+/************** navigation bar ****************/
+.navbutton {
+    list-style-type: none;
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.navbutton1 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 110px;
+    height: 19px;
+    left: 720px;
+    top: 49px;
+}
+
+.navbutton2 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 119px;
+    height: 19px;
+    left: 885px;
+    top: 49px;
+}
+
+.navbutton3 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 77px;
+    height: 19px;
+    left: 1059px;
+    top: 49px;
+}
+
+.navbutton4 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 97px;
+    height: 19px;
+    left: 1191px;
+    top: 49px;
+}
+/* End navigation bar */
+
+.rectangle4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #383838;
+    position: absolute;
+    height: 711px;
+    top: 960px;
+    left: 0px;
+
+}
+
+.rectangle4 > div{
+    background: color #292929;;
+    padding: 1em;
+}
+.rectangle4 > div:nth-child(odd) {
+    background-color:#292929;
+}
+
+
+/* positionning */
+.address {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+.address span {
+    color:#FF7630
+}
+
+.left {
+    position: absolute;
+    left: 67px;
+    top: 4233px; 
+}
+
+.right {
+    position: absolute;
+    text-align: right;
+    right: 70px;
+    top: 4233px;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 4422px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
