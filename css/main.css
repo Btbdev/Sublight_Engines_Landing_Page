@@ -9,22 +9,22 @@
     display: block, flex, etc;
     overflow: visible, hidden, scroll, etc;
     box-sizing: border-box, etc;
-    width: - - -;
-    height: - - - ;
+    width: ;
+    height:  ;
     padding: 10px 10px;
     border: 0 solid color;
-    margin: - - - ;
+    margin: ;
     /* COLOR */
-    background: - - - ;
-    color: - - - ;
+    background:  ;
+    color: ;
     /* TEXT */
     font-family: 'Roboto';
     font-size: normal;
-    line-height: - - - ;
+    line-height: ;
     text-align: center;
     text-transform: uppercase;
     /* OTHER */
-    cursor: - - - ;
+    cursor:  ;
 }
 
 body {
@@ -41,25 +41,22 @@ body {
     height: 68px;
     background:rgba(0, 0, 0, 0.69);
     margin-top: 24px;
-    margin-left: 0px;
+    
 }
 
 .test {
     position: absolute;
     text-align: center;
-    left: 0px;
     width: 100%;
     top: 653px;
     display: block;
+    
 }
-
-
 
 .test span {
     
-    
+    padding-bottom: 10px;
     display: block;
-
     white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
@@ -67,17 +64,14 @@ body {
     font-size: 51px;
     line-height: 60px;
     /* identical to box height */
-    text-align: center;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 
 h1 {
     
-    width: 829px;
     height: 93px;
-    
+    align-items: center;
     white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
@@ -87,6 +81,7 @@ h1 {
     /* identical to box height */
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 30px;
     
     /* Sublight Engines/Orange */
 
@@ -104,17 +99,6 @@ h1 {
 }
 
 
-
-.elevatorbutton {
-    position: absolute;
-    width: 65px;
-    height: 64px;
-    margin-top: 831px;
-    margin-left: 691px;
-    z-index: 1;
-}
-
-
 .bckimage {
     position: absolute;
     height: 960px;
@@ -126,14 +110,13 @@ h1 {
 
 .rectangle2 {
     position: absolute;
-    
-    z-index: -1;
     width: 100%;
     height: 711px;
     background-color: #383838;
     top: 960px;
     left: 0px;
     align-self: center;
+    padding-top: 40px;
 }
 
 .container {
@@ -146,7 +129,7 @@ h1 {
 
 .container span {
     
-    height: 29px;   
+      
     display: block;
     white-space: nowrap;
     font-family: 'Roboto';
@@ -156,7 +139,7 @@ h1 {
     line-height: 29px;
     text-align: center;
     text-transform: uppercase;
-    
+    padding-bottom: 10px;
     color: #FFFFFF;
 }
 
@@ -174,40 +157,32 @@ h2 {
 
     text-align: center;
     text-transform: uppercase;
-
+    padding-bottom: 30px;
     color: #FFFFFF;
 }
 
 .container2 {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    left: 180px;
+    
     top: 1242px;
     text-align: center;
+    margin-right: 25px;
+    padding-top: 50px;
 }
 
-
-
-
-
-.design {
-    
-    width: 250px;
-    height: 250px;
-    
-}
 
 .container3 {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    left: 0px;
     top: 1538px;
-    text-align: center;
-    justify-content: space-between;
+    padding-top: 50px;
+    
 }
 
 .container3 span {
-    
     
     font-family: 'Roboto';
     font-style: normal;
@@ -222,18 +197,59 @@ h2 {
 }
 
 
-
+/************ orange section ************/
 .rectangle3 {
     position: absolute;
     height: 853px;
     width: 100%;
     background-color: #FF7630;
-    margin-top: 2242px;
-    margin-left: 0px;
+    top: 2242px;
+    align-self: center;
+    padding-top: 40px;
+}
+
+.wrapper {
+    
+    width: 100%;
+    left: 0px;
+    top: 2310px;   
+    text-align: center;   
 }
 
 
 
+.wrapper span {
+    
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+h4 {
+    
+    
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+
+/************ card section **************/
 .rectangle8 {
     position: absolute;
     width: 100%;
@@ -241,14 +257,41 @@ h2 {
     background-color: #292929;
     margin-top: 3899px;
     margin-left: 0px;
+    text-align: center;
+    
 }
+
+.rectangle8 span {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    height: 254px;
+    line-height: 254px;
+    color: #FF7630;
+    
+    padding-right: 70px;
+    
+    
+
+    
+}
+
+.rectangle8 img {
+    position: absolute;
+    padding-top: 56px;
+    z-index: 1;
+    
+}
+/************ end card section *************/
 
 
 /************ text section *****************/
 .textsection {
     text-align: left;
     width: 100%;
-    left: 71px;
+    left: 10%;
     top: 1700px;
    
 }
@@ -256,13 +299,13 @@ h2 {
 .textsection span {
     position: absolute;
     display: block;
-    top: 1080px;
-    left: 71px;
+    text-align: left;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 29px;
+    line-height: 0px;
     text-transform: uppercase;
     color: #292929
 }
@@ -272,7 +315,7 @@ h2 {
     display: block;
     top: 1899px;
     width: 586px;
-    left: 71px
+    left: 10%
 }
 
 .textsection img {
@@ -280,15 +323,16 @@ h2 {
     width: 615px;
     height: 411px;
     margin-top: 1751px;
-    margin-left: 748px;
+    right: 10%;
     z-index: 1;
-    padding-left: 87px;
+    
 }
 
 h3 {
     position: absolute;
-    left: 71px;
+    left: 10%;
     top: 1833px;
+    padding: 5px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -302,7 +346,7 @@ h3 {
 
 /*********** end text section **************/
 
-h4 {
+.h4 {
     position: absolute;
     width: 552px;
     height: 53px;
@@ -378,43 +422,6 @@ h4 {
 }
 /* End navigation bar */
 
-.copyright {
-    position: absolute;
-    width: 223px;
-    height: 12px;
-    left: 609px;
-    top: 4422px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    /* identical to box height */
-
-    text-align: center;
-
-    /* Sublight Engines/Black */
-
-    color: #292929;
-}
-
-.address {
-    
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-transform: uppercase;
-
-    /* Sublight Engines/Black */
-
-    color: #292929;
-}
-
-
 .rectangle4 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -434,32 +441,56 @@ h4 {
     background-color:#292929;
 }
 
+
 /* positionning */
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
+.address {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+.address span {
+    color:#FF7630
 }
 
 .left {
     position: absolute;
-    width: 295px;
-    height: 78px;
     left: 67px;
-    top: 4258px;
-    left: 0;
-    
+    top: 4233px; 
 }
 
 .right {
     position: absolute;
-    width: 126px;
-    height: 18px;
-    left: 1244px;
+    text-align: right;
+    right: 70px;
     top: 4233px;
-    
+}
 
+.copyright {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 4422px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
 }
