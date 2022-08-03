@@ -28,15 +28,23 @@
 }
 
 body {
-    background-color: white;
-    font-family: 'roboto';
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
+header {
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: unset;
+    top: 20px;
+}
+
 /* Rectangle 1 */
 .rectangle1 {
-    position: absolute;
+    
     width: 100%;
     height: 68px;
     background:rgba(0, 0, 0, 0.69);
@@ -48,7 +56,7 @@ body {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 653px;
+    top: 60%;
     display: block;
     
 }
@@ -62,7 +70,7 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 51px;
-    line-height: 60px;
+    line-height: 100%;
     /* identical to box height */
     text-transform: uppercase;
     color: #FFFFFF;
@@ -70,14 +78,14 @@ body {
 
 h1 {
     
-    height: 93px;
+    height: 100%;
     align-items: center;
     white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 79px;
-    line-height: 93px;
+    line-height: 100%;
     /* identical to box height */
     text-align: center;
     text-transform: uppercase;
@@ -90,11 +98,11 @@ h1 {
 
 /* logo_sublight */
 .logo {
-    position: absolute;
-    width: 465px;
-    height: 86px;
-    margin-top: 15px;
-    margin-left: 20px;
+    
+    width: 32.3%;
+    height: 8.96%;
+    margin-top: 1.04%;
+    margin-left: 1.4%;
     z-index: 1;
 }
 
@@ -107,6 +115,66 @@ h1 {
     margin-left: 0px;
     z-index: -1;
 }
+
+/************** navigation bar ****************/
+.navbutton {
+    list-style-type: none;
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.navbutton1 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 110px;
+    height: 19px;
+    left: 50%;
+    top: 5.1%;
+}
+
+.navbutton2 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 119px;
+    height: 19px;
+    left: 61.5%;
+    top: 5.1%;
+}
+
+.navbutton3 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 77px;
+    height: 19px;
+    left: 73.54%;
+    top: 5.1%;
+}
+
+.navbutton4 {
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    width: 97px;
+    height: 19px;
+    left: 82.7%;
+    top: 5.1%;
+}
+/* End navigation bar */
+
+
+
+/******** OUR PRODUCT SECTION ***********/
+
 
 .rectangle2 {
     position: absolute;
@@ -169,7 +237,7 @@ h2 {
     top: 1242px;
     text-align: center;
     margin-right: 25px;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 
@@ -195,6 +263,68 @@ h2 {
     color: #FFFFFF;
 
 }
+
+/******** END OUR PRODUCT SECTION ***********/
+
+/************ text section *****************/
+.textsection {
+    text-align: left;
+    width: 100%;
+    left: 10%;
+    top: 1700px;
+   
+}
+
+.textsection span {
+    position: absolute;
+    display: block;
+    text-align: left;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 0px;
+    text-transform: uppercase;
+    color: #292929
+}
+
+.textsection p {
+    position: absolute;
+    display: block;
+    top: 1899px;
+    width: 586px;
+    left: 10%
+}
+
+.textsection img {
+    position: absolute;
+    width: 615px;
+    height: 411px;
+    margin-top: 1751px;
+    right: 8%;
+    z-index: 1;
+    
+}
+
+h3 {
+    position: absolute;
+    left: 10%;
+    top: 1833px;
+    padding: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+/*********** end text section **************/
+
 
 
 /************ orange section ************/
@@ -262,9 +392,9 @@ h4 {
     text-align: center;
     padding-top: 70px;
 }
-/************ end orange section ************/
+/************ END PRODUCTS SECTION ************/
 
-/************ form section ************/
+/************ FORM SECTION ************/
 
 .formsection {
     position: absolute;
@@ -298,11 +428,13 @@ h4 {
 
 .testform {
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .wrapperform2 {
     display: inline-block;
-    
+    padding-top: 20px;
+
 }
 
 h5 {
@@ -364,21 +496,26 @@ input[type="text"] {
     background-color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    
+    padding-block: 10px;
     /* Sublight Engines/Black */
 
     color: #292929;
 }
 
 .formbutton2 {
-    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.column {
+    flex: 50;
 }
 
 
 
-/************ end form section ************/
+/************ END FORM SECTION ************/
 
-/************ card section **************/
+
+/************ CARD SECTION **************/
 .rectangle8 {
     position: absolute;
     width: 100%;
@@ -410,129 +547,10 @@ input[type="text"] {
     z-index: 1;
     
 }
-/************ end card section *************/
+/************ END CARD SECTION *************/
 
 
-/************ text section *****************/
-.textsection {
-    text-align: left;
-    width: 100%;
-    left: 10%;
-    top: 1700px;
-   
-}
-
-.textsection span {
-    position: absolute;
-    display: block;
-    text-align: left;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 0px;
-    text-transform: uppercase;
-    color: #292929
-}
-
-.textsection p {
-    position: absolute;
-    display: block;
-    top: 1899px;
-    width: 586px;
-    left: 10%
-}
-
-.textsection img {
-    position: absolute;
-    width: 615px;
-    height: 411px;
-    margin-top: 1751px;
-    right: 8%;
-    z-index: 1;
-    
-}
-
-h3 {
-    position: absolute;
-    left: 10%;
-    top: 1833px;
-    padding: 5px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
-    text-transform: uppercase;
-
-    /* Sublight Engines/Black */
-
-    color: #292929;
-}
-
-/*********** end text section **************/
-
-
-
-
-
-
-/************** navigation bar ****************/
-.navbutton {
-    list-style-type: none;
-    display: inline;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF
-}
-
-.navbutton1 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 110px;
-    height: 19px;
-    left: 720px;
-    top: 49px;
-}
-
-.navbutton2 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 119px;
-    height: 19px;
-    left: 885px;
-    top: 49px;
-}
-
-.navbutton3 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 77px;
-    height: 19px;
-    left: 1059px;
-    top: 49px;
-}
-
-.navbutton4 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 97px;
-    height: 19px;
-    left: 1191px;
-    top: 49px;
-}
-/* End navigation bar */
-
-.rectangle4 {
+/* .rectangle4 {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #383838;
@@ -549,7 +567,7 @@ h3 {
 }
 .rectangle4 > div:nth-child(odd) {
     background-color:#292929;
-}
+} */
 
 
 /* positionning */
@@ -603,4 +621,11 @@ h3 {
     /* Sublight Engines/Black */
 
     color: #292929;
+}
+
+/************ CURSOR ACTIONS ****************/
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:#FFFFFF;
 }
