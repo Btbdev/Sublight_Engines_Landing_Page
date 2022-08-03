@@ -205,7 +205,7 @@ h2 {
     background-color: #FF7630;
     top: 2242px;
     align-self: center;
-    padding-top: 40px;
+   
 }
 
 .wrapper {
@@ -213,7 +213,8 @@ h2 {
     width: 100%;
     left: 0px;
     top: 2310px;   
-    text-align: center;   
+    text-align: center;  
+    padding-bottom: 20px; 
 }
 
 
@@ -234,8 +235,7 @@ h2 {
 }
 
 h4 {
-    
-    
+        
     white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
@@ -248,6 +248,71 @@ h4 {
     color: #FFFFFF;
 }
 
+.img {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 50px;
+    left: 10px;
+    right: 20px;
+    
+}
+
+.button {
+    text-align: center;
+    padding-top: 70px;
+}
+/************ end orange section ************/
+
+/************ form section ************/
+
+.formsection {
+    position: absolute;
+    width: 100%;
+    top: 3199px;
+    align-self: center;
+}
+
+.wrapperform {
+    
+    width: 100%;
+    left: 0px;
+    text-align: center;  
+    padding-bottom: 20px; 
+}
+
+.wrapperform span {
+    
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #292929;
+}
+
+h5 {
+        
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FF7630;
+}
+
+
+
+/************ end form section ************/
 
 /************ card section **************/
 .rectangle8 {
@@ -256,7 +321,7 @@ h4 {
     height: 254px;
     background-color: #292929;
     margin-top: 3899px;
-    margin-left: 0px;
+    
     text-align: center;
     
 }
@@ -271,10 +336,7 @@ h4 {
     line-height: 254px;
     color: #FF7630;
     
-    padding-right: 70px;
-    
-    
-
+    padding-right: 80px;
     
 }
 
@@ -323,7 +385,7 @@ h4 {
     width: 615px;
     height: 411px;
     margin-top: 1751px;
-    right: 10%;
+    right: 8%;
     z-index: 1;
     
 }
@@ -346,22 +408,6 @@ h3 {
 
 /*********** end text section **************/
 
-.h4 {
-    position: absolute;
-    width: 552px;
-    height: 53px;
-    left: 258px;
-    top: 3999px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 45px;
-    line-height: 53px;
-    /* identical to box height */
-
-    color: #FF7630;
-}
 
 
 
