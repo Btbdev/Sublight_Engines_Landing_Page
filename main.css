@@ -6,33 +6,123 @@ body {
   }
   
   header {
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.69);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    position: unset;
+    position: fixed;
+    width: 100%;
+    top: 24px;
+    padding: 0 40 0 40;
+    align-items: center;
+    max-height: 68px;
+   
     
   }
+
+ 
   
   header nav ul li {
-    display: inline-block;
-  }
-  
-  section#hero {
-    background-image: url('css/images/bkg_1 1.png');
-    height: 960px;
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: nowrap;
+    padding-right: 80px;;
+    
+    
   }
 
-/* Rectangle 1 */
-.rectangle1 {
-    
-    width: 100%;
-    height: 68px;
-    background:rgba(0, 0, 0, 0.69);
-    margin-top: 0px; 
+  header img {
+    margin-right: auto;
+    padding-left: 20px;
 }
 
-.logo {
+  /* main {
+    
+    top: 0;
+    left:0;
+    bottom:0;
+    left:0;
+    
+  } */
+ 
+
+
+/************** navigation bar ****************/
+.navbutton {
+    list-style-type: none;
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+/* .navbutton1 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 110px;
+    height: 19px;
+    left: 50%;
+    top: 5.1%;
+} */
+/* 
+.navbutton2 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 119px;
+    height: 19px;
+    left: 61.5%;
+    top: 5.1%;
+}
+
+.navbutton3 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 77px;
+    height: 19px;
+    left: 73.54%;
+    top: 5.1%;
+}
+
+.navbutton4 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 97px;
+    height: 19px;
+    left: 82.7%;
+    top: 5.1%;
+} */
+/* End navigation bar */
+
+
+
+  
+  section#hero {
+    display: flex;
+    background-image: url('css/images/bkg_1 1.png');
+    background-size: cover;
+    max-width: 100%;
+    
+    
+  }
+
+/* .logo {
     
     height: auto;
     width: auto;
@@ -42,7 +132,7 @@ body {
     margin-top: 20px;
     margin-left: 1.4%;
     
-}
+} */
 
 .test {
     margin-top: 550px;
@@ -69,7 +159,6 @@ body {
 
 h1 {
     
-    height: 100%;
     align-items: center;
     white-space: nowrap;
     font-family: 'Roboto';
@@ -80,18 +169,14 @@ h1 {
     /* identical to box height */
     text-align: center;
     text-transform: uppercase;
-    
-    
     /* Sublight Engines/Orange */
 
     color: #FFFFFF;
 }
 
-
-  
   section#services {
     background-color: #383838;
-    height: 711px;
+    
   }
   
 /******** OUR SERVICES SECTION ***********/
@@ -154,10 +239,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    
-    top: 1242px;
     text-align: center;
-    
     padding-top: 80px;
 }
 
@@ -166,7 +248,6 @@ h2 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    top: 1538px;
     padding-top: 50px;
     
 }
@@ -201,19 +282,17 @@ h2 {
     
     width: 50%;
     margin-left: 75px;
-    top: 1700px;
+    align-self: center;
     
 }
 
 .textsection span {
     
     display: block;
-    padding: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 0px;
     text-transform: uppercase;
     color: #292929
 }
@@ -221,7 +300,6 @@ h2 {
 .textsection p {
     
     display: block;
-    top: 1899px;
     width: 586px;
     
 }
@@ -229,9 +307,8 @@ h2 {
 .textsection img {
     
     width: 50%;
-    margin-top: 1751px;
     margin-right: 50px;
-    
+    padding-right: 77px;
 }
 
 h3 {
@@ -253,23 +330,18 @@ h3 {
 /************ PRODUCT SECTION ************/
   
 .rectangle3 {
-    
-    height: 853px;
     width: 100%;
     background-color: #FF7630;
-    top: 2242px;
     align-self: center;
     padding-top: 30px;
-   
+    padding-bottom: 80px;
+    text-align: center;
+      
 }
 
 .wrapper {
-    
-    width: 100%;
-    left: 0px;
-    top: 2310px;   
+      
     text-align: center;  
-     
 }
 
 .wrapper span {
@@ -305,9 +377,7 @@ h4 {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 50px;
-    left: 10px;
-    right: 20px;
+    padding-top: 80px;
     
 }
 
@@ -321,30 +391,31 @@ h4 {
 /************ FORM SECTION ************/
 
 section#test2 {
-    background-color: none;;
+    background-color: none;
   }
 
 .formsection {
-    width: 100%;
+    display: inline-block;
     width: 100%;
     text-align: center;  
-    padding-bottom: 20px;
+    padding-bottom: 200px;
 }
 
 .wrapperform {
-    
-    
+
+}
+
+.wrapperform img {
+    padding-bottom: 50px;
 }
 
 .wrapperform span {
     
     display: block;
-    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 29px;
     text-align: center;
     text-transform: uppercase;
     
@@ -361,19 +432,57 @@ h5 {
     line-height: 53px;
     text-align: center;
     text-transform: uppercase;
-   
     color: #FF7630;
 }
 
-.testform {
-    justify-content: space-between;
+/* .testform {
+    display: inline-flex;
+    text-align: left;
     padding-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.wrapperform2 {
-    display: inline-block;
-    padding-top: 50px;
+.testform2 {
+    display: inline-flex;
+    text-align: left;
+    padding-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: flex-start;
+} */
 
+.wrapperform2 {
+    
+    
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    text-align: left;
+}
+
+.leftpart {
+   
+}
+
+.rightpart {
+    
+}
+
+.mathieu {
+    background-color: gray;
+    width: 100%;
+    
+    
+    
 }
 
 .form-control {
@@ -387,18 +496,18 @@ h5 {
     height: 52px;
 }
 
-.formtext {
-    text-align: left;
-}
 
 label {
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
+    padding-left: 0;
     text-align: left;
     text-transform: uppercase;
+    
 }
 
 input[type="text"] {
@@ -423,47 +532,22 @@ input[type="text"] {
     text-transform: uppercase;
     padding-block: 10px;
     /* Sublight Engines/Black */
-
+    display: block;
+    justify-content: center;
     color: #292929;
 }
-
-.formbutton2 {
-    padding-top: 50px;
-}
-
-.column {
-    flex: 50;
-}
-
 
 
 /************ END FORM SECTION ************/
 
 
-
-
-
- 
-  
-  section#test3 {
-    background-color: purple;
-
-
-  }
-  
-  section#test4 {
-    background-color: none;
-  }
-
 /************ CARD SECTION **************/
 .rectangle8 {
-    
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 254px;
     background-color: #292929;
-    margin-top: 3899px;
-    
-    text-align: center;
+    width: 100%;
     
 }
 
@@ -476,15 +560,17 @@ input[type="text"] {
     height: 254px;
     line-height: 254px;
     color: #FF7630;
-    
-    padding-right: 50px;
+    width: 50%;
+    padding-right: 0px;
+    padding-left: 258px;
     
 }
 
 .rectangle8 img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 287px;
     
-    padding-top: 56px;
-    z-index: 1;
     
 }
 /************ END CARD SECTION *************/
@@ -494,7 +580,7 @@ input[type="text"] {
 .address {
     display: flex;
     flex-direction: row;
-    
+    padding-top: 90px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
