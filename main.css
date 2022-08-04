@@ -1,0 +1,552 @@
+/* CSS STRUCTURE TEMPLATE */
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: unset;
+    
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  section#hero {
+    background-image: url('css/images/bkg_1 1.png');
+    height: 960px;
+  }
+
+/* Rectangle 1 */
+.rectangle1 {
+    
+    width: 100%;
+    height: 68px;
+    background:rgba(0, 0, 0, 0.69);
+    margin-top: 0px; 
+}
+
+.logo {
+    
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    max-width: 465px;
+    max-height: 86px;
+    margin-top: 20px;
+    margin-left: 1.4%;
+    
+}
+
+.test {
+    margin-top: 550px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    
+}
+
+.test span {
+    
+    padding-bottom: 10px;
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 51px;
+    line-height: 100%;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h1 {
+    
+    height: 100%;
+    align-items: center;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 79px;
+    line-height: 100%;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+    /* Sublight Engines/Orange */
+
+    color: #FFFFFF;
+}
+
+
+  
+  section#services {
+    background-color: #383838;
+    height: 711px;
+  }
+  
+/******** OUR SERVICES SECTION ***********/
+
+
+.rectangle2 {
+    
+    width: 100%;
+    height: 711px;
+    background-color: #383838;
+    top: 960px;
+    left: 0px;
+    align-self: center;
+    padding-top: 40px;
+}
+
+.container {
+    
+    width: 100%;
+    left: 0px;
+    top: 1040px;
+    text-align: center;
+}
+
+.container span {
+    
+      
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+h2 {
+       
+    height: 53px;
+    top: 1073px;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    top: 1242px;
+    text-align: center;
+    
+    padding-top: 80px;
+}
+
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 1538px;
+    padding-top: 50px;
+    
+}
+
+.container3 span {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+/******** END OUR SERVICES SECTION ***********/
+
+/************ TEXT SECTION *****************/
+
+.text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    margin-bottom: 75px;
+
+}
+
+.textsection {
+    
+    width: 50%;
+    margin-left: 75px;
+    top: 1700px;
+    
+}
+
+.textsection span {
+    
+    display: block;
+    padding: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 0px;
+    text-transform: uppercase;
+    color: #292929
+}
+
+.textsection p {
+    
+    display: block;
+    top: 1899px;
+    width: 586px;
+    
+}
+
+.textsection img {
+    
+    width: 50%;
+    margin-top: 1751px;
+    margin-right: 50px;
+    
+}
+
+h3 {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+/*********** END TEXT SECTION **************/
+
+
+/************ PRODUCT SECTION ************/
+  
+.rectangle3 {
+    
+    height: 853px;
+    width: 100%;
+    background-color: #FF7630;
+    top: 2242px;
+    align-self: center;
+    padding-top: 30px;
+   
+}
+
+.wrapper {
+    
+    width: 100%;
+    left: 0px;
+    top: 2310px;   
+    text-align: center;  
+     
+}
+
+.wrapper span {
+    
+    display: block;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 2563px;
+    color: #FFFFFF;
+}
+
+h4 {
+        
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+
+.img {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 50px;
+    left: 10px;
+    right: 20px;
+    
+}
+
+.button {
+    text-align: center;
+    padding-top: 70px;
+}
+/************ END PRODUCTS SECTION ************/
+
+
+/************ FORM SECTION ************/
+
+section#test2 {
+    background-color: none;;
+  }
+
+.formsection {
+    width: 100%;
+    width: 100%;
+    text-align: center;  
+    padding-bottom: 20px;
+}
+
+.wrapperform {
+    
+    
+}
+
+.wrapperform span {
+    
+    display: block;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #292929;
+}
+
+h5 {
+        
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+   
+    color: #FF7630;
+}
+
+.testform {
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.wrapperform2 {
+    display: inline-block;
+    padding-top: 50px;
+
+}
+
+.form-control {
+    width: 498px;
+    height: 52px;
+    
+}
+
+.form-control-half {
+    width: 236px;
+    height: 52px;
+}
+
+.formtext {
+    text-align: left;
+}
+
+label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A0A0A0;
+    padding-left: 1%;
+}
+
+.formbutton {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    background-color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding-block: 10px;
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+.formbutton2 {
+    padding-top: 50px;
+}
+
+.column {
+    flex: 50;
+}
+
+
+
+/************ END FORM SECTION ************/
+
+
+
+
+
+ 
+  
+  section#test3 {
+    background-color: purple;
+
+
+  }
+  
+  section#test4 {
+    background-color: none;
+  }
+
+/************ CARD SECTION **************/
+.rectangle8 {
+    
+    width: 100%;
+    height: 254px;
+    background-color: #292929;
+    margin-top: 3899px;
+    
+    text-align: center;
+    
+}
+
+.rectangle8 span {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    height: 254px;
+    line-height: 254px;
+    color: #FF7630;
+    
+    padding-right: 50px;
+    
+}
+
+.rectangle8 img {
+    
+    padding-top: 56px;
+    z-index: 1;
+    
+}
+/************ END CARD SECTION *************/
+
+
+  /* positionning */
+.address {
+    display: flex;
+    flex-direction: row;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    
+
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+.address span {
+    color:#FF7630
+}
+
+.left {
+    margin-left: 67px;
+    width: 50%;
+    
+}
+
+.right {
+    text-align: right;
+    margin-right: 70px;
+    width: 50%;
+    
+    
+}    
+/************** COPYWRIGTH **********************/
+.copyright {
+    
+    width: 100%;
+    display: block;
+    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+    text-align: center;
+    /* Sublight Engines/Black */
+
+    color: #292929;
+}
+
+  /************ CURSOR ACTIONS ****************/
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:#FFFFFF;
+}
