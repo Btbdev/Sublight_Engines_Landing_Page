@@ -469,14 +469,18 @@ h4 {
 
     /* Sublight Engines/Gray */
     padding-left: 20px;
-    
+    padding-right: 20px;
     color: #383838;
 }
 
 select {
     
-    padding: 0px 50px;
-   
+    background: url('css/images/v-icon.png') no-repeat;
+    background-position: 90% center;
+      -moz-appearance: none; 
+      -webkit-appearance: none; 
+      appearance: none;
+       
     
 }
 
