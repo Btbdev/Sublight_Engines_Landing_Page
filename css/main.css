@@ -1,62 +1,144 @@
 /* CSS STRUCTURE TEMPLATE */
-.selector {
-    /* POSITIONING */
-    position: absolute, relative, fixed;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    /* DISPLAY & BOX MODEL */
-    display: block, flex, etc;
-    overflow: visible, hidden, scroll, etc;
-    box-sizing: border-box, etc;
-    width: ;
-    height:  ;
-    padding: 10px 10px;
-    border: 0 solid color;
-    margin: ;
-    /* COLOR */
-    background:  ;
-    color: ;
-    /* TEXT */
-    font-family: 'Roboto';
-    font-size: normal;
-    line-height: ;
-    text-align: center;
-    text-transform: uppercase;
-    /* OTHER */
-    cursor:  ;
-}
-
 body {
     width: 100%;
-    margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: none;
+    margin: 0;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.69);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    position: unset;
-    top: 20px;
+    position: fixed;
+    width: 100%;
+    top: 24px;
+    padding: 0 40 0 40;
+    align-items: center;
+    max-height: 68px;
+   
+    
+  }
+
+ 
+  
+  header nav ul li {
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: nowrap;
+    padding-right: 70px;;
+    
+    
+  }
+
+  header img {
+    margin-right: auto;
+    padding-left: 20px;
 }
 
-/* Rectangle 1 */
-.rectangle1 {
+  /* main {
     
-    width: 100%;
-    height: 68px;
-    background:rgba(0, 0, 0, 0.69);
-    margin-top: 24px;
+    top: 0;
+    left:0;
+    bottom:0;
+    left:0;
     
+  } */
+ 
+
+
+/************** navigation bar ****************/
+.navbutton {
+    list-style-type: none;
+    display: inline;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF
 }
+
+/* .navbutton1 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 110px;
+    height: 19px;
+    left: 50%;
+    top: 5.1%;
+} */
+/* 
+.navbutton2 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 119px;
+    height: 19px;
+    left: 61.5%;
+    top: 5.1%;
+}
+
+.navbutton3 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 77px;
+    height: 19px;
+    left: 73.54%;
+    top: 5.1%;
+}
+
+.navbutton4 {
+    
+    display: inline;
+    white-space: nowrap;
+    width: 97px;
+    height: 19px;
+    left: 82.7%;
+    top: 5.1%;
+} */
+/* End navigation bar */
+
+
+
+  
+  section#hero {
+    display: flex;
+    background-image: url('images/bkg_1 1.png');
+    background-size: cover;
+    max-width: 100%;
+    padding-bottom: 72px;
+    
+    
+  }
+
+/* .logo {
+    
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    max-width: 465px;
+    max-height: 86px;
+    margin-top: 20px;
+    margin-left: 1.4%;
+    
+} */
 
 .test {
-    position: absolute;
+    margin-top: 550px;
     text-align: center;
     width: 100%;
-    top: 60%;
     display: block;
     
 }
@@ -78,7 +160,6 @@ header {
 
 h1 {
     
-    height: 100%;
     align-items: center;
     white-space: nowrap;
     font-family: 'Roboto';
@@ -89,105 +170,31 @@ h1 {
     /* identical to box height */
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 30px;
-    
     /* Sublight Engines/Orange */
 
     color: #FFFFFF;
 }
 
-/* logo_sublight */
-.logo {
+  section#services {
+    background-color: #383838;
     
-    width: 32.3%;
-    height: 8.96%;
-    margin-top: 1.04%;
-    margin-left: 1.4%;
-    z-index: 1;
-}
-
-
-.bckimage {
-    position: absolute;
-    height: 960px;
-    Width: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
-    z-index: -1;
-}
-
-/************** navigation bar ****************/
-.navbutton {
-    list-style-type: none;
-    display: inline;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF
-}
-
-.navbutton1 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 110px;
-    height: 19px;
-    left: 50%;
-    top: 5.1%;
-}
-
-.navbutton2 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 119px;
-    height: 19px;
-    left: 61.5%;
-    top: 5.1%;
-}
-
-.navbutton3 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 77px;
-    height: 19px;
-    left: 73.54%;
-    top: 5.1%;
-}
-
-.navbutton4 {
-    position: absolute;
-    display: inline;
-    white-space: nowrap;
-    width: 97px;
-    height: 19px;
-    left: 82.7%;
-    top: 5.1%;
-}
-/* End navigation bar */
-
-
-
-/******** OUR PRODUCT SECTION ***********/
+  }
+  
+/******** OUR SERVICES SECTION ***********/
 
 
 .rectangle2 {
-    position: absolute;
+    
     width: 100%;
-    height: 711px;
+    padding-bottom: 104px;
     background-color: #383838;
-    top: 960px;
+    /* top: 960px; */
     left: 0px;
-    align-self: center;
-    padding-top: 40px;
+    /* align-self: center; */
+    padding-top: 80px;
 }
 
-.container {
+.containerservices {
     
     width: 100%;
     left: 0px;
@@ -195,7 +202,7 @@ h1 {
     text-align: center;
 }
 
-.container span {
+.containerservices span {
     
       
     display: block;
@@ -225,7 +232,7 @@ h2 {
 
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     color: #FFFFFF;
 }
 
@@ -233,11 +240,21 @@ h2 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    
-    top: 1242px;
     text-align: center;
-    margin-right: 25px;
-    padding-top: 80px;
+    padding-top: 100px;
+}
+
+.img1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 
@@ -245,12 +262,11 @@ h2 {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    top: 1538px;
     padding-top: 50px;
     
 }
 
-.container3 span {
+.container2 span {
     
     font-family: 'Roboto';
     font-style: normal;
@@ -259,59 +275,59 @@ h2 {
     line-height: 29px;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 46px;
 
     color: #FFFFFF;
 
 }
 
-/******** END OUR PRODUCT SECTION ***********/
+/******** END OUR SERVICES SECTION ***********/
 
-/************ text section *****************/
+/************ TEXT SECTION *****************/
+
+.text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
 .textsection {
-    text-align: left;
-    width: 100%;
-    left: 10%;
-    top: 1700px;
-   
+    
+    width: 50%;
+    margin-left: 75px;
+    align-self: center;
+    
 }
 
 .textsection span {
-    position: absolute;
-    display: block;
-    text-align: left;
     
+    display: block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 0px;
     text-transform: uppercase;
     color: #292929
 }
 
 .textsection p {
-    position: absolute;
+    
     display: block;
-    top: 1899px;
     width: 586px;
-    left: 10%
-}
-
-.textsection img {
-    position: absolute;
-    width: 615px;
-    height: 411px;
-    margin-top: 1751px;
-    right: 8%;
-    z-index: 1;
     
 }
 
+.textsection img {
+    
+    width: 50%;
+    margin-right: 50px;
+    padding-right: 77px;
+}
+
 h3 {
-    position: absolute;
-    left: 10%;
-    top: 1833px;
-    padding: 5px;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -323,31 +339,25 @@ h3 {
     color: #292929;
 }
 
-/*********** end text section **************/
+/*********** END TEXT SECTION **************/
 
 
-
-/************ orange section ************/
+/************ PRODUCT SECTION ************/
+  
 .rectangle3 {
-    position: absolute;
-    height: 853px;
     width: 100%;
     background-color: #FF7630;
-    top: 2242px;
     align-self: center;
-   
+    padding-top: 30px;
+    padding-bottom: 80px;
+    text-align: center;
+      
 }
 
 .wrapper {
-    
-    width: 100%;
-    left: 0px;
-    top: 2310px;   
+      
     text-align: center;  
-    padding-bottom: 20px; 
 }
-
-
 
 .wrapper span {
     
@@ -360,7 +370,7 @@ h3 {
     line-height: 29px;
     text-align: center;
     text-transform: uppercase;
-    
+    top: 2563px;
     color: #FFFFFF;
 }
 
@@ -374,17 +384,15 @@ h4 {
     line-height: 53px;
     text-align: center;
     text-transform: uppercase;
-    
     color: #FFFFFF;
+    
 }
 
 .img {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 50px;
-    left: 10px;
-    right: 20px;
+    padding-top: 80px;
     
 }
 
@@ -394,47 +402,137 @@ h4 {
 }
 /************ END PRODUCTS SECTION ************/
 
+
+.formulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 104px;
+    
+   
+    
+}
+
+.formulaire .name {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    
+    
+}
+
+.formulaire .email {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.formulaire .phone {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    flex-wrap: nowrap;
+    width: 47%;
+    
+}
+
+.formulaire .language {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 47%;
+   
+   
+}
+
+.formulaire .holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boxsize {
+    height: 50px;
+}
+
+.boxsizeselect {
+    height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* Sublight Engines/Gray */
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #383838;
+}
+
+select {
+    
+    background: url('images/v-icon.png') no-repeat;
+    background-position: 90% center;
+      -moz-appearance: none; 
+      -webkit-appearance: none; 
+      appearance: none;
+       
+    
+}
+
+
+
+label {
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /************ FORM SECTION ************/
 
+section#test2 {
+    background-color: none;
+  }
+
 .formsection {
-    position: absolute;
+    display: inline-block;
     width: 100%;
-    top: 3199px;
-    align-self: center;
+    text-align: center;  
+    padding-bottom: 10px;
 }
 
 .wrapperform {
-    
-    width: 100%;
-    left: 0px;
-    text-align: center;  
-    padding-bottom: 0px; 
+
+}
+
+.wrapperform img {
+    padding-bottom: 50px;
 }
 
 .wrapperform span {
     
     display: block;
-    white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 29px;
     text-align: center;
     text-transform: uppercase;
     
     color: #292929;
-}
-
-.testform {
-    justify-content: space-between;
-    padding-bottom: 20px;
-}
-
-.wrapperform2 {
-    display: inline-block;
-    padding-top: 20px;
-
 }
 
 h5 {
@@ -447,13 +545,83 @@ h5 {
     line-height: 53px;
     text-align: center;
     text-transform: uppercase;
-    
     color: #FF7630;
 }
 
+.testform {
+    display: flex;
+    text-align: left;
+    padding-bottom: 20px;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.testform2 {
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.row .input-group {
+    flex-basis: 50%;
+}
+
+/* .wrapperform2 {
+    
+    
+    background-color: aqua;
+    width: 100%;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    
+    text-align: left;
+} */
+
+/* .leftpart {
+    background-color: gray;
+}
+
+.rightpart {
+    background-color: red;
+} */
+
+
+
+.formbutton2 {
+    display: block;
+    padding-top: 50px;    
+    
+}
+
 .form-control {
-    width: 498px;
+    width: 562px;
     height: 52px;
+    background-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
     
 }
 
@@ -462,18 +630,18 @@ h5 {
     height: 52px;
 }
 
-.formtext {
-    text-align: left;
-}
 
 label {
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 10px;
+    padding-left: 0;
     text-align: left;
     text-transform: uppercase;
+    
 }
 
 input[type="text"] {
@@ -483,8 +651,10 @@ input[type="text"] {
     font-size: 15px;
     line-height: 18px;
     color: #A0A0A0;
-    padding-left: 1%;
+    padding-left: 20px;
 }
+
+
 
 .formbutton {
     font-family: 'Roboto';
@@ -498,17 +668,44 @@ input[type="text"] {
     text-transform: uppercase;
     padding-block: 10px;
     /* Sublight Engines/Black */
-
+    display: block;
+    justify-content: center;
     color: #292929;
 }
 
-.formbutton2 {
-    padding-top: 50px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    width: 100%;
+    
+
 }
 
-.column {
-    flex: 50;
+.container form.user-details {
+    display: flex;
+    justify-content: center;
 }
+
+.container form .user-details2 {
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    display: block;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight : 500;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
 
 
 
@@ -517,13 +714,11 @@ input[type="text"] {
 
 /************ CARD SECTION **************/
 .rectangle8 {
-    position: absolute;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 254px;
     background-color: #292929;
-    margin-top: 3899px;
-    
-    text-align: center;
+    width: 100%;
     
 }
 
@@ -536,43 +731,27 @@ input[type="text"] {
     height: 254px;
     line-height: 254px;
     color: #FF7630;
-    
-    padding-right: 80px;
+    width: 50%;
+    padding-right: 0px;
+    padding-left: 258px;
     
 }
 
 .rectangle8 img {
-    position: absolute;
-    padding-top: 56px;
-    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 287px;
+    
     
 }
 /************ END CARD SECTION *************/
 
 
-/* .rectangle4 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: #383838;
-    position: absolute;
-    height: 711px;
-    top: 960px;
-    left: 0px;
-
-}
-
-.rectangle4 > div{
-    background: color #292929;;
-    padding: 1em;
-}
-.rectangle4 > div:nth-child(odd) {
-    background-color:#292929;
-} */
-
-
-/* positionning */
+  /* positionning */
 .address {
-    
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -591,23 +770,24 @@ input[type="text"] {
 }
 
 .left {
-    position: absolute;
-    left: 67px;
-    top: 4233px; 
+    margin-left: 67px;
+    width: 50%;
+    
 }
 
 .right {
-    position: absolute;
     text-align: right;
-    right: 70px;
-    top: 4233px;
-}
-
+    margin-right: 70px;
+    width: 50%;
+    
+    
+}    
+/************** COPYWRIGTH **********************/
 .copyright {
-    position: absolute;
+    
     width: 100%;
     display: block;
-    top: 4422px;
+    
 
     font-family: 'Roboto';
     font-style: normal;
@@ -615,15 +795,13 @@ input[type="text"] {
     font-size: 10px;
     line-height: 12px;
     /* identical to box height */
-
     text-align: center;
-
     /* Sublight Engines/Black */
 
     color: #292929;
 }
 
-/************ CURSOR ACTIONS ****************/
+  /************ CURSOR ACTIONS ****************/
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
