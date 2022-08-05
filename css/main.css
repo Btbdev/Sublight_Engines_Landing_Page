@@ -31,7 +31,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     white-space: nowrap;
-    padding-right: 70px;;
+    padding-right: 115px;;
   }
 
   header img {
@@ -68,6 +68,7 @@ body {
     text-align: center;
     width: 100%;
     display: block;
+    padding-top: 250px;
 }
 
 .test span {
@@ -104,7 +105,6 @@ section#services {
 
 
 .rectangle2 {
-    
     width: 100%;
     padding-bottom: 104px;
     background-color: #383838;
@@ -226,8 +226,13 @@ h2 {
 
 .textsection p {
     display: block;
-    width: 586px;
-    
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
 }
 
 .textsection img {
@@ -389,7 +394,7 @@ label {
 }
 
 .wrapperform img {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .wrapperform span {
@@ -413,6 +418,7 @@ h5 {
     text-align: center;
     text-transform: uppercase;
     color: #FF7630;
+    
 }
 
 .formbutton2 {
@@ -498,12 +504,11 @@ input[type="text"] {
     font-style: normal;
     font-weight: 900;
     font-size: 45px;
-    height: 254px;
+    height: 53px;
     line-height: 254px;
     color: #FF7630;
     width: 50%;
-    padding-right: 0px;
-    padding-left: 258px;
+    padding-left: 280px;
 }
 
 .rectangle8 img {
