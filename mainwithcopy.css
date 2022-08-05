@@ -389,6 +389,61 @@ h4 {
 /************ END PRODUCTS SECTION ************/
 
 
+.formulaire {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 100px;
+    
+    background-color: aqua;
+    
+}
+
+.formulaire .name {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    
+    
+}
+
+.formulaire .email {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.formulaire .phone {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    flex-wrap: nowrap;
+}
+
+.formulaire .language {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-wrap: nowrap;
+}
+
+.formulaire .holder {
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /************ FORM SECTION ************/
 
 section#test2 {
@@ -399,7 +454,7 @@ section#test2 {
     display: inline-block;
     width: 100%;
     text-align: center;  
-    padding-bottom: 200px;
+    padding-bottom: 10px;
 }
 
 .wrapperform {
