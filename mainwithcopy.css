@@ -186,15 +186,15 @@ h1 {
 .rectangle2 {
     
     width: 100%;
-    height: 711px;
+    padding-bottom: 104px;
     background-color: #383838;
-    top: 960px;
+    /* top: 960px; */
     left: 0px;
-    align-self: center;
-    padding-top: 40px;
+    /* align-self: center; */
+    padding-top: 80px;
 }
 
-.container {
+.containerservices {
     
     width: 100%;
     left: 0px;
@@ -202,7 +202,7 @@ h1 {
     text-align: center;
 }
 
-.container span {
+.containerservices span {
     
       
     display: block;
@@ -232,7 +232,7 @@ h2 {
 
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     color: #FFFFFF;
 }
 
@@ -241,7 +241,20 @@ h2 {
     justify-content: space-around;
     width: 100%;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 100px;
+}
+
+.img1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 
@@ -253,7 +266,7 @@ h2 {
     
 }
 
-.container3 span {
+.container2 span {
     
     font-family: 'Roboto';
     font-style: normal;
@@ -262,6 +275,7 @@ h2 {
     line-height: 29px;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 46px;
 
     color: #FFFFFF;
 
@@ -274,8 +288,8 @@ h2 {
 .text {
     display: flex;
     flex-direction: row;
-    margin-top: 120px;
-    margin-bottom: 75px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
 }
 
@@ -392,12 +406,11 @@ h4 {
 .formulaire {
     display: flex;
     flex-direction: row;
-    
     justify-content: center;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 104px;
     
-    background-color: aqua;
+   
     
 }
 
@@ -405,6 +418,7 @@ h4 {
     display: flex;
     flex-direction: column;
     padding-bottom: 15px;
+    justify-content: space-between;
     
     
 }
@@ -420,17 +434,56 @@ h4 {
     flex-direction: column;
     padding-bottom: 15px;
     flex-wrap: nowrap;
+    width: 47%;
+    
 }
 
 .formulaire .language {
     display: flex;
     flex-direction: column;
-    padding: 15px;
     flex-wrap: nowrap;
+    width: 47%;
+   
+   
 }
 
 .formulaire .holder {
-    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boxsize {
+    height: 50px;
+}
+
+.boxsizeselect {
+    height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* Sublight Engines/Gray */
+    padding-left: 20px;
+    
+    color: #383838;
+}
+
+select {
+    
+    padding: 0px 50px;
+   
+    
+}
+
+
+
+label {
+    padding-bottom: 5px;
 }
 
 
@@ -549,13 +602,22 @@ h5 {
 
 .formbutton2 {
     display: block;
-    padding-top: 50px;
-    /* padding-right: 100px; */
+    padding-top: 50px;    
+    
 }
 
 .form-control {
     width: 562px;
     height: 52px;
+    background-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
     
 }
 
@@ -585,8 +647,10 @@ input[type="text"] {
     font-size: 15px;
     line-height: 18px;
     color: #A0A0A0;
-    padding-left: 1%;
+    padding-left: 20px;
 }
+
+
 
 .formbutton {
     font-family: 'Roboto';
