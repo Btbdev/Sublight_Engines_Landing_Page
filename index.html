@@ -20,9 +20,9 @@
             <!-- Logo -->
             <img alt="logo Sublight" class="logo" src="css\images\logo_sublight.svg">
             
-            <nav id="navbar" class="navbar">
+            <nav id="navbar" class="nav-bar">
                    
-              <ul class="navmenu">
+              <ul class="nav-menu">
                 <li class="nav-item">
                   <a class="nav-link" href="#services" id="services-nav">
                     Our Services
@@ -43,17 +43,17 @@
                     Contact Us
                   </a>
                 </li>
-                <!-- Mobile menu hamburger-->
-                <div class="hamburger">
-                    <img alt="mobile menu" class="menuIcon" src="css\images\hamburger-icon.png">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-
               </ul>
+
+            <!-- Mobile menu hamburger-->
+            <div class="hamburger">
+                <!-- <img alt="mobile menu" class="hamburger" src="css\images\hamburger-icon.png"> -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
             </nav>
-            
             
 
         </header>
@@ -63,7 +63,7 @@
 <!------------------------------ HERO SECTION -------------------------------------->       
 
 
-            <section id="hero">
+            <section class="hero" id="hero">
                 
                     <div class="test">
                         <h1>
@@ -72,9 +72,11 @@
                         </h1>
                         
                         <a href="#services">
-                        <img alt="elevator button" class="" src="css\images\elevator button.svg">
+                        
                         </a>
-
+                        <div class="elevator">
+                            <img alt="elevator button" class="" src="css\images\elevator button.svg">
+                        </div>
                     </div>
                 
             </section>
@@ -91,7 +93,9 @@
                         <span>one-stop for your elevator needs</span>
                                 one step closer to success
                         </h2>
+                        <div>
                         <img alt="separator" class="" src="css\images\separator.png">
+                        </div>
                     </div>  
                     
                     <div class="container2">  
@@ -263,6 +267,7 @@
 
         
         <!-- SCRIPTS -->
-        <script src="" async defer></script>
+        <script src="main.js"></script>
+        <!-- <script src="main.js" async defer></script> -->
     </body>
 </html>
