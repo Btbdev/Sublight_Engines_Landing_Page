@@ -118,17 +118,13 @@ body {
         transition: 0.3s;
         margin-top: 14px;
         margin-bottom: 1px;
-        opacity: 0.75;
-       
-        
-        
+        opacity: 0.75;        
     }
     
     .nav-link {
         width: 100%;
         text-align: left;
         justify-content: left;
-        
     }
 
     .nav-item {
@@ -150,7 +146,19 @@ body {
 
 /* RULES FOR 768PX SCREEN */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+    /* display the bars of the hamburger menu */
+    .bar {  
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
     header {
         justify-content: center;
         top: 0px;
@@ -159,15 +167,15 @@ body {
     }
 
     header img {
-        padding-top: 43px;
+        padding-top: 25px;
         padding-left: 20px;
-        max-width: 199px;
+        max-width: 250px;
         max-height: 37px;
     }
 
     .hamburger {
         display: block;
-        padding: 50px 21px 19px;
+        padding: 40px 30px 19px;
         
     }
     
@@ -188,7 +196,7 @@ body {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: flex-start;
-        left: -0%;
+        left: -100%;
         top: 93px;
         gap: 0;
         flex-direction: column;
@@ -219,10 +227,6 @@ body {
         left: 0;
     }
 }
-
-
-
-
 
 /* à voir si je garde */
   header img {
@@ -320,8 +324,9 @@ h1 {
 section#services {
     background-color: #383838;
   }
-
-
+  
+  /* RULES FOR 375PX SCREEN */
+  
   @media screen and (max-width: 375px) {
     
     section#hero {
@@ -372,6 +377,53 @@ section#services {
     }
   } 
   
+/* RULES FOR 768PX SCREEN */
+  
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    
+    section#hero {
+        /* display: flex; */
+        background: url('images/bkg_1 1.png') no-repeat cover ;
+        /* background-size: cover; */
+        width: 100%;
+        max-height: 554px;
+        padding-bottom: 375px;
+    }  
+
+    .test {
+        
+        text-align: center;
+        width: 100%;
+        display: block;
+        justify-content: space-between;  
+       
+    }
+
+    .test span {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        white-space: nowrap;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        white-space: initial;
+    } 
+
+    .elevator {
+        padding-top:42px;
+        z-index:999;
+        
+    }
+  } 
+
+
+
 /******** OUR SERVICES SECTION ***********/
 
 
@@ -469,6 +521,8 @@ h2 {
 
 }
 
+/* RULES FOR 375PX SCREEN */
+
 @media screen and (max-width: 375px) {
     .rectangle2 {
         max-width: 375px;
@@ -525,6 +579,62 @@ h2 {
     }
 
 }
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .rectangle2 {
+        
+        max-width: 100%;
+        left: 0px;
+    }
+    
+    .containerservices img {
+        padding-top: 0px;
+    }
+
+    .containerservices span {   
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    h2 { 
+        font-size: 28px;
+        line-height: 32px
+    }
+
+    .buttonCatalog .catalog {
+        display: flex;
+        
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 0px;
+    }
+    
+    .img1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    
+    .container2 span {
+        padding-top: 46px;
+        padding-bottom: 46px;
+        color: #FFFFFF;
+    }
+
+}
+
+
 
 /******** END OUR SERVICES SECTION ***********/
 
@@ -587,6 +697,8 @@ h3 {
     color: #292929;
 }
 
+/* RULES FOR 375PX SCREEN */
+
 @media screen and (max-width: 375px) {
     .text {
         display: flex;
@@ -623,6 +735,53 @@ h3 {
         line-height: 35px;
     }
 }
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .text {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .textsection {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .textsection span {
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    
+    .textsection p {
+        width: 90%;
+        font-size: 16px;
+        padding-left: 40px;
+        
+    }
+    
+    .elevatorImg img {
+        max-width: 100%;
+        padding-top: 54px;
+        padding-bottom: 24px;
+    }
+    
+    h3 {
+        padding-bottom: 15px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+
 /*********** END TEXT SECTION **************/
 
 
@@ -680,9 +839,9 @@ h4 {
     padding-top: 70px;
 }
 
+/* RULES FOR 375PX SCREEN */
+
 @media screen and (max-width: 375px) {
-       
-    
     
     .wrapper span {
         font-size: 16px;
@@ -744,6 +903,87 @@ h4 {
         /* max-width: 100%; */
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .button {
+        display: none;
+        text-align: center;
+        padding-top: 70px;
+    }
+    
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    
+    .wrapper span {
+        font-size: 20px;
+        line-height: 23px;
+        padding: 20px;
+    }
+    
+    h4 {  
+        white-space: nowrap;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 38px;
+        
+    }
+    
+    .productImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .productImg .safety {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .cab {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .door {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .mechanics {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .hoistway {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .button {
+        display: none;
+        text-align: center;
+        padding-top: 70px;
     }
     
 }
@@ -910,8 +1150,6 @@ input[type="text"] {
     padding-left: 20px;
 }
 
-
-
 .formbutton {
     font-family: 'Roboto';
     font-style: normal;
@@ -926,6 +1164,8 @@ input[type="text"] {
     justify-content: center;
     color: #292929;
 }
+
+/* RULES FOR 375PX SCREEN */
 
 @media screen and (max-width: 375px) {
     
@@ -953,8 +1193,7 @@ input[type="text"] {
     h5 {  
         font-size: 24px;
         line-height: 28px;
-        padding-bottom: 38px;
-        
+        padding-bottom: 38px; 
     }
     
     .form-control {
@@ -965,6 +1204,55 @@ input[type="text"] {
     .form-control-half {
         
         width: 340px;
+        height: 52px;
+    }
+    
+    label {
+        line-height: 12px;
+    }
+    
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    
+    .formulaire .phone {
+        width: 100%;
+    }
+    
+    .formulaire .language {
+        width: 100%;
+    }
+    
+    .formulaire .holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .wrapperform span {
+        font-size: 20px;
+        line-height: 23px;
+        padding-top: 44px;
+        padding-bottom: 14px;
+    }
+    
+    h5 {  
+        font-size: 28px;
+        line-height: 32px;
+        padding-bottom: 38px;
+        
+    }
+    
+    .form-control {
+        width: 410px;
+        height: 52px;        
+    }
+    
+    .form-control-half {
+        
+        width: 410px;
         height: 52px;
     }
     
@@ -1012,6 +1300,8 @@ input[type="text"] {
     /* width: 100%; */
 }
 
+/* RULES FOR 375PX SCREEN */
+
 @media screen and (max-width: 375px) {
     .rectangle8 {
         display: flex;
@@ -1039,6 +1329,37 @@ input[type="text"] {
         justify-content: center;
     }
 }
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .rectangle8 {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .rectangle8 span {
+        
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 24px;
+        padding-right: 26px;
+    }
+    
+    .rectangle8 img {
+        padding-top: 26px;
+        padding-bottom: 24px;
+        max-width: 287px;
+        align-content: center;
+    }
+    .cardLogo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 /************ END CARD SECTION *************/
 
@@ -1072,6 +1393,8 @@ input[type="text"] {
     width: 50%;   
 }    
 
+/* RULES FOR 375PX SCREEN */
+
 @media screen and (max-width: 375px) {
     .address {
         display: flex;
@@ -1100,6 +1423,37 @@ input[type="text"] {
     }    
 }
 
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .address {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0px;
+    }
+    .address span {
+        font-size: 15px;
+        line-height: 18px;
+
+    }
+    
+    .left {
+        text-align: left;
+        margin-left: 20px;
+        width: 50%; 
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+    
+    .right {
+        text-align: right;
+        margin-right: 20px;
+        width: 50%; 
+        padding-top: 50px; 
+         
+    }    
+}
+
 /************** COPYWRIGTH **********************/
 
 .copyright {
@@ -1108,8 +1462,8 @@ input[type="text"] {
     line-height: 12px;
     text-align: center;
     color: #292929;
-    padding-top: 86px;
-    padding-bottom: 37px;
+    padding-top: 0px;
+    padding-bottom: 137px;
 }
 
 /************** MOBILE BUTTON FIXED **********************/
@@ -1125,6 +1479,8 @@ input[type="text"] {
     padding-top: 70px;
 } */
 
+/* RULES FOR 375PX SCREEN */
+
 @media screen and (max-width: 375px) {
     .buttonCatalog {
     display: flex;
@@ -1134,6 +1490,21 @@ input[type="text"] {
     width: 100%;
     height: auto;
     padding-bottom: 40px;
+    }
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (max-width: 768px) {
+    .buttonCatalog {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
     }
 }
 
