@@ -154,13 +154,23 @@
                     </div>
                     
                     <div class="productImg">  
-                      
+
+                        <div class="firstRow">
                         <img alt="safety" class="safety" src="images\product_card.png">
+                        
                         <img alt="cab" class="cab" src="images\product_card 2.png">
+                        </div>
+                        
+                        <div class="secondRow">
                         <img alt="door" class="door" src="images\product_card 3.png">
+                       
                         <img alt="mechanics" class="mechanics" src="images\product_card 4.png">
+                        </div>
+                        
+                        <div class="thirdRow">
                         <img alt="hoistway" class="hoistway" src="images\product_card 5.png"> 
-    
+                        </div>
+
                     </div>
             
                     <div class="button">
@@ -189,19 +199,19 @@
                 </div>
                     
                 <div class="formulaire">
-                    <form name="subligthForm" action="" onsubmit="return validateForm()" method="post">
+                    <form name="subligthForm" action="" onsubmit="" method="post">
                         <div class="name success error">
                             <label>Name <sup>*</sup></label>
-                            <input type="text" name="name" id="name" class="boxsize" placeholder="Enter your full name" required="required" pattern="^[a-zA-Z'-]+$">
+                            <input type="text" name="name" id="name" class="boxsize" placeholder="Enter your full name" required="required" pattern="^(?![\s.]+$)[a-zA-Z\s.]*$" title="Enter your full name">
                         </div>
                         <div class="email success error">
                             <label>Email address <sup>*</sup></label>
-                            <input type="text" name="email" id="email" class="boxsize" placeholder="yourname@company.com" required="required" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
+                            <input type="text" name="email" id="email" class="boxsize" placeholder="yourname@company.com" required="required" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Format : yourname@company.com">
                         </div>
                         <div class="holder">
                             <div class="phone success error">
                                 <label>Phone number</label>
-                                <input type="text" name="phone" id="phone" class="boxsize" placeholder="0 (000) 000 -0000" pattern="^(\+\d{1}\s)?\({3})?[\s.-]\d{3}[\s.-]\d{4}$">
+                                <input type="text" name="phone" id="phone" class="boxsize" placeholder="0 (000) 000 -0000" required="required" pattern="^[0-9]{1} ?[(]?[0-9]{3}[)]\s?[0-9]{3}[-\s]?[0-9]{4,6}$" title="Format: 0 (000) 000-0000">
                             </div>
                             <div class="language">
                                 <label for="language">Preferred language</label>
