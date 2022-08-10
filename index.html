@@ -23,7 +23,15 @@
             <div class="wrapperHamburger">
                 <nav id="" class="nav-bar">
                     
-                    <ul class="nav-menu" id="menu">
+                    <!-- Mobile menu hamburger-->
+                    <div class="hamburger" id="hamburger">
+                        <!-- <img alt="mobile menu" class="hamburger" src="css\images\hamburger-icon.png"> -->
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <ul class="nav-menu" id="menu" class="show">
                         <li class="nav-item">
                         <a class="nav-link" href="#services" id="services-nav">
                             Our Services
@@ -46,13 +54,7 @@
                         </li>
                     </ul>
 
-                    <!-- Mobile menu hamburger-->
-                    <div class="hamburger" id="hamburger">
-                        <!-- <img alt="mobile menu" class="hamburger" src="css\images\hamburger-icon.png"> -->
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
+                    
 
                 </nav>
             </div>
@@ -187,19 +189,19 @@
                 </div>
                     
                 <div class="formulaire">
-                    <form action="" method="post">
-                        <div class="name">
+                    <form name="subligthForm" action="" onsubmit="return validateForm()" method="post">
+                        <div class="name success error">
                             <label>Name <sup>*</sup></label>
-                            <input type="text" name="name" class="boxsize" placeholder="Enter your full name">
+                            <input type="text" name="name" id="name" class="boxsize" placeholder="Enter your full name" required="required">
                         </div>
-                        <div class="email">
+                        <div class="email success error">
                             <label>Email address <sup>*</sup></label>
-                            <input type="text" name="email" class="boxsize" placeholder="yourname@company.com">
+                            <input type="text" name="email" id="email" class="boxsize" placeholder="yourname@company.com" required="required">
                         </div>
                         <div class="holder">
-                            <div class="phone">
+                            <div class="phone success error">
                                 <label>Phone number</label>
-                                <input type="text" name="phone" class="boxsize" placeholder="0 (000) 000 -0000">
+                                <input type="text" name="phone" id="phone" class="boxsize" placeholder="0 (000) 000 -0000" pattern="[0-9]{1} [0-9]{3}-[0-9]{3} -[0-9]{4}">
                             </div>
                             <div class="language">
                                 <label for="language">Preferred language</label>
@@ -283,6 +285,6 @@
         
         <!-- SCRIPTS -->
         <script src="js/main.js"></script>
-        <!-- <script src="main.js" async defer></script> -->
+        
     </body>
 </html>

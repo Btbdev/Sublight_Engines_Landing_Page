@@ -1,13 +1,13 @@
-const hamburger = document.getElementbyId('hamburger');
-const navMenu = document.getElementById('menu');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-    // navMenu.classList.toggle('change');
-});
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
 
-// document.querySelectorAll('.nav-link').forEach(n =>
-//     n.addEventListener('click', () => {
-//         hamburger.classList.remove('change');
-//         navMenu.classList.remove('change');
-//     }))
+document.querySelectorAll('.nav-link').forEach(n =>
+    n.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }))
