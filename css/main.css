@@ -228,15 +228,8 @@ body {
         align-self: center;
         width: 100%;
         justify-content: center;
-        
-
-        
-        height: 100%;
-        
-       
-        
-        
-        
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .nav-item {
