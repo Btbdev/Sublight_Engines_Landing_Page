@@ -192,16 +192,16 @@
                     <form name="subligthForm" action="" onsubmit="return validateForm()" method="post">
                         <div class="name success error">
                             <label>Name <sup>*</sup></label>
-                            <input type="text" name="name" id="name" class="boxsize" placeholder="Enter your full name" required="required">
+                            <input type="text" name="name" id="name" class="boxsize" placeholder="Enter your full name" required="required" pattern="^[a-zA-Z'-]+$">
                         </div>
                         <div class="email success error">
                             <label>Email address <sup>*</sup></label>
-                            <input type="text" name="email" id="email" class="boxsize" placeholder="yourname@company.com" required="required">
+                            <input type="text" name="email" id="email" class="boxsize" placeholder="yourname@company.com" required="required" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
                         </div>
                         <div class="holder">
                             <div class="phone success error">
                                 <label>Phone number</label>
-                                <input type="text" name="phone" id="phone" class="boxsize" placeholder="0 (000) 000 -0000" pattern="[0-9]{1} [0-9]{3}-[0-9]{3} -[0-9]{4}">
+                                <input type="text" name="phone" id="phone" class="boxsize" placeholder="0 (000) 000 -0000" pattern="^(\+\d{1}\s)?\({3})?[\s.-]\d{3}[\s.-]\d{4}$">
                             </div>
                             <div class="language">
                                 <label for="language">Preferred language</label>

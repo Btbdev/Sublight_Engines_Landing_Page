@@ -1169,6 +1169,10 @@ input[type="text"] {
     color: #A0A0A0;
     padding-left: 20px;
 }
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
 
 .formbutton {
     font-family: 'Roboto';
