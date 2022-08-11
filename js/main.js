@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-link').forEach(n =>
     }));
 
 
-//    EmailjS script
+// EmailjS script
   
  const btn = document.getElementById('button');
 
