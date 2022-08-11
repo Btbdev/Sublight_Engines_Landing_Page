@@ -199,7 +199,7 @@
                 </div>
                     
                 <div class="formulaire">
-                    <form name="subligthForm" action="" onsubmit="" method="post">
+                    <form name="myForm" action="" onsubmit="" method="post" id="myForm">
                         <div class="name success error">
                             <label>Name <sup>*</sup></label>
                             <input type="text" name="name" id="name" class="boxsize" placeholder="Enter your full name" required="required" pattern="^(?![\s.]+$)[a-zA-Z\s.]*$" title="Enter your full name">
@@ -223,19 +223,18 @@
                             </div>
                         </div>
                         <div class="formbutton2">
-                            <input type="submit" value="Submit" class="form-control">
+                            <input type="submit" value="Submit" id="button" class="form-control">
                         </div>
                     </form>
                 </div>
-                <!-- EmailjS script --> 
+
                 <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
                 </script>
+              
                 <script type="text/javascript">
-                   (function(){
-                      emailjs.init("YOUR_PUBLIC_KEY");
-                   })();
-                </script>
+                    emailjs.init('RuaoGRpIgsKfs1OTC')
+                </script>                
 
             </section>
             

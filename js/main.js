@@ -15,3 +15,27 @@ document.querySelectorAll('.nav-link').forEach(n =>
     }));
 
 
+//    EmailjS script
+  
+ const btn = document.getElementById('button');
+
+ document
+    .getElementById("myForm")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+   const serviceID = "service_52lp4ol";
+   const templateID = "template_4xth64n";
+
+// send the email here
+   emailjs.sendForm(serviceID, templateID, this).then(
+     (response) => {
+       console.log("SUCCESS!", response.status, response.text);
+       alert("SUCCESS!");
+     },
+     (error) => {
+       console.log("FAILED...", error);
+       alert("FAILED...", error);
+     }
+   );
+ });    
