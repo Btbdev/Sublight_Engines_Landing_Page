@@ -1065,6 +1065,7 @@ h3 {
     text-transform: uppercase;
     top: 2563px;
     color: #FFFFFF;
+    padding-top: 68px;
 }
 
 h4 {  
@@ -1077,20 +1078,87 @@ h4 {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .productImg {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
     padding-top: 80px;
 }
+
+.productImg .safety {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .cab {
+    
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .door {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .mechanics {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .hoistway {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 .button {
     text-align: center;
     padding-top: 70px;
 }
+
+/* .firstRow {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.thirdRow {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
+} */
+
 
 /* RULES FOR 375PX SCREEN */
 
@@ -1285,7 +1353,7 @@ h4 {
         
     }
     
-    .productImg {
+    /* .productImg {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1361,7 +1429,7 @@ h4 {
         padding-bottom: 32px;
         padding-left: 45px;
         justify-content: center;
-}
+} */
 
 }
 
@@ -1467,6 +1535,7 @@ label {
     text-align: center;
     text-transform: uppercase;
     color: #292929;
+    padding-top: 100px;
 }
 
 h5 {  
@@ -1479,6 +1548,7 @@ h5 {
     text-align: center;
     text-transform: uppercase;
     color: #FF7630;
+    padding-bottom: 24px;
     
 }
 
