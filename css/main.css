@@ -471,6 +471,7 @@ section#services {
         white-space: nowrap;
         font-size: 28px;
         line-height: 33px;
+        white-space: initial;
     }
     
     h1 {
@@ -688,11 +689,13 @@ h2 {
     .containerservices span {   
         font-size: 16px;
         line-height: 19px;
+        white-space: initial;
     }
     
     h2 { 
         font-size: 24px;
         line-height: 28px;
+        white-space: initial;
     }
 
     .buttonCatalog {
@@ -748,11 +751,13 @@ h2 {
     .containerservices span {   
         font-size: 20px;
         line-height: 25px;
+        white-space: initial;
     }
     
     h2 { 
         font-size: 28px;
-        line-height: 32px
+        line-height: 32px;
+        white-space: initial;
     }
 
     .buttonCatalog .catalog {
@@ -922,6 +927,7 @@ h3 {
         padding-bottom: 10px;
         font-size: 20px;
         line-height: 23px;
+        white-space: initial;
     }
     
     .textsection p {
@@ -1010,6 +1016,7 @@ h3 {
         padding-bottom: 10px;
         font-size: 20px;
         line-height: 28px;
+        
     }
     
     .textsection p {
@@ -1105,7 +1112,8 @@ h4 {
     .wrapper span {
         font-size: 16px;
         line-height: 19px;
-        padding: 14px;
+        padding-bottom: 14px;
+        white-space: initial;
     }
     
     h4 {  
@@ -1119,7 +1127,7 @@ h4 {
         text-transform: uppercase;
         color: #FFFFFF;
         padding-bottom: 38px;
-        
+        white-space: initial;
     }
     
     .productImg {
@@ -1179,7 +1187,8 @@ h4 {
     .wrapper span {
         font-size: 20px;
         line-height: 23px;
-        padding: 20px;
+        padding-bottom: 20px;
+        white-space: initial;
     }
     
     h4 {  
@@ -1576,12 +1585,14 @@ input:invalid {
         line-height: 19px;
         padding-top: 44px;
         padding-bottom: 14px;
+        white-space: initial;
     }
     
     h5 {  
         font-size: 24px;
         line-height: 28px;
         padding-bottom: 38px; 
+        white-space: initial;
     }
     
     .form-control {
@@ -1624,6 +1635,7 @@ input:invalid {
         line-height: 23px;
         padding-top: 44px;
         padding-bottom: 14px;
+        white-space: initial;
     }
     
     h5 {  
@@ -1634,13 +1646,13 @@ input:invalid {
     }
     
     .form-control {
-        width: 410px;
+        width: 340px;
         height: 52px;        
     }
     
     .form-control-half {
         
-        width: 410px;
+        width: 340px;
         height: 52px;
     }
     
