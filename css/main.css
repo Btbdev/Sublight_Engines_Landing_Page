@@ -1,6 +1,19 @@
 /* CSS STRUCTURE TEMPLATE */
+
+/* SCREEN DISPLAY RULES */
+/* 375px + --- mobiles  */ 
+/* 768px + --- tablets  */
+/* 1280px + --- laptop  */
+/* 1920px + --- desktop */
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
 body {
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     margin: 0;
   }
@@ -31,17 +44,295 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     white-space: nowrap;
-    padding-right: 115px;;
+    padding-right: 65px;
   }
 
+/* Show hamburger menu */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* display the bars of the hamburger menu */
+.bar {  
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* RULES FOR 375PX SCREEN */
+
+@media screen and (max-width: 375px) {
+    header {
+        justify-content: center;
+        top: 0px;
+        padding: 0 0 0 0;
+        max-height: 93px;
+    }
+
+    header img {
+        padding-top: 35px;
+        padding-left: 20px;
+        max-width: 199px;
+        max-height: 37px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 50px 21px 19px;
+        
+    }
+    
+    /* to make an x in the hamburger */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-items: center;
+        left: -1000%;
+        top: 93px;
+        gap: 0;
+        background-color: rgba(0, 0, 0, 0.69);
+        width: 100%;
+        text-align: left;
+        transition: 0.3s;
+        margin-bottom: 1px;
+        /* padding-left: 25px;   */     
+    }
+
+    .nav-menu.show {
+        left: 0;
+    }
+    
+    .nav-link {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 25px;
+        align-self: center;
+    }
+
+    .nav-item {
+        width: 100%;
+        /* padding: 8px 0px 8px 0px; */
+        border-top: solid 0.1px white;
+        /* border-bottom: solid 0.1px white; */
+        width: 100%;
+        /* margin: 10px 0px 0px 0px */
+    }
+
+    .nav-item > li {
+        border-bottom: 1px;
+        border-style: solid;
+        
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+    /* display the bars of the hamburger menu */
+    .bar {  
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    header {
+        justify-content: center;
+        top: 0px;
+        padding: 0 0 0 0;
+        max-height: 93px;
+    }
+
+    header img {
+        padding-top: 25px;
+        padding-left: 20px;
+        max-width: 250px;
+        max-height: 40px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 40px 30px 19px;
+        
+    }
+    
+    /* to make an x in the hamburger */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        left: -100%;
+        top: 88px;
+        gap: 0;
+        background-color: rgba(0, 0, 0, 0.69);
+        width: 100%;
+        transition: 0.3s;
+        margin-bottom: 0px;        
+    }
+    
+    .nav-link {
+        display: flex;
+        text-align: left; 
+        align-self: center;
+        width: 100%;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-item {
+        /* margin: 5px 1px; */
+        border-top: solid 0.1px white;
+        /* border-bottom: solid 0.1px white; */
+        width: 100%;
+        height: 35px;
+        padding-right: 0px;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    /* display the bars of the hamburger menu */
+    /* .bar {  
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    } */
+
+    header {
+        justify-content: space-between;
+        top: 24px;
+        padding: 0 0 0 0;
+        max-height: 68px;
+    }
+
+    header img {
+        
+        /* padding-right: 0px;
+        padding-left: 20px;
+        max-width: 100%;
+        max-height: 100%; */
+    }
+
+
+    /* .nav-menu {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        left: -100%;
+        top: 88px;
+        gap: 0;
+        background-color: rgba(0, 0, 0, 0.69);
+        width: 100%;
+        transition: 0.3s;
+        margin-bottom: 0px;        
+    } */
+
+    header nav ul li {
+        padding-right: 0px;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+        .nav-link {
+        display: flex;
+        /* text-align: center;  */
+        align-self: center;
+        width: 100%;
+        /* justify-content: space-evenly; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        
+    }
+
+    /* .nav-item {
+
+        padding-right: 50px; */
+        /* margin: 5px 1px; */
+        /* border-top: solid 0.1px white; */
+        /* border-bottom: solid 0.1px white; */
+        /* width: 100%;
+        height: 35px;
+        padding-right: 0px; */
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
+    /* } */
+
+    /* .nav-menu.active {
+        left: 0;
+    } */
+}
+
+
+/* à voir si je garde */
   header img {
     margin-right: auto;
     padding-left: 20px;
 }
 
-.navbutton {
+.nav-bar {
     list-style-type: none;
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -51,24 +342,47 @@ body {
     text-transform: uppercase;
     color: #FFFFFF
 }
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 50px; */
+}
+
+.nav-link {
+    transition: 0.7s ease;   
+}
  
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.69)
+}
+
+
 /************** end navigation bar ****************/
 
   section#hero {
-    display: flex;
-    background-image: url('images/bkg_1 1.png');
+    /* display: flex; */
+    background: url('images/bkg_1\ 1.png') no-repeat center center/cover;
     background-size: cover;
-    max-width: 100%;
-    padding-bottom: 72px;
+    width: 100%;
+    height: 960px;
+    /* padding-bottom: 72px; */
   }
-
+    
+/* .hero {
+    position: relative;
+    z-index: -1;
+} */
 
 .test {
-    margin-top: 550px;
+    /* margin-top: 550px; */
     text-align: center;
     width: 100%;
-    display: block;
-    padding-top: 250px;
+    display: inline-block;
+    /* justify-self: center; */
+    justify-content: center;
+    padding-top: 653px;
 }
 
 .test span {
@@ -97,10 +411,158 @@ h1 {
     color: #FFFFFF;
 }
 
+.elevator {
+    padding-top:25px;
+}
+
 section#services {
     background-color: #383838;
   }
   
+  /* RULES FOR 375PX SCREEN */
+  
+  @media screen and (max-width: 375px) {
+    
+    section#hero {
+        /* display: flex; */
+        background: url('images/bkg_1 1.png') no-repeat cover ;
+        background-size: cover;
+        width: 100%;
+        max-height: 554px;
+        padding-bottom: 325px;
+    
+    
+    
+    /* section#hero {
+        width: 100%;
+        padding-top: 554px;
+        background: cover;
+        /* padding-bottom: 72px; */
+    }    */
+
+    .test {
+        
+        text-align: center;
+        width: 100%;
+        display: block;
+        justify-content: space-between;  
+        
+    }
+
+    .test span {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        white-space: nowrap;
+        font-size: 28px;
+        line-height: 33px;
+        white-space: initial;
+    }
+    
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        white-space: initial;
+    } 
+
+    .elevator {
+        padding-top:42px;
+        z-index:999;
+    }
+  } 
+  
+/* RULES FOR 768PX SCREEN */
+  
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    
+    section#hero {
+        /* display: flex; */
+        background: url('images/bkg_1 1.png') no-repeat cover ;
+        /* background-size: cover; */
+        width: 100%;
+        max-height: 554px;
+        padding-bottom: 375px;
+    }  
+
+    .test {
+        
+        text-align: center;
+        width: 100%;
+        display: block;
+        justify-content: space-between;  
+       
+    }
+
+    .test span {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        white-space: nowrap;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        white-space: initial;
+    } 
+
+    .elevator {
+        padding-top:42px;
+        z-index:999;
+        
+    }
+  } 
+
+  /* RULES FOR 1280PX SCREEN */
+  
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    
+    section#hero {
+        /* display: flex; */
+        background: url('images/bkg_1 1.png') no-repeat cover ;
+        /* background-size: cover; */
+        width: 100%;
+        max-height: 554px;
+        padding-bottom: 375px;
+    }  
+
+    .test {
+        
+        text-align: center;
+        width: 100%;
+        display: block;
+        justify-content: space-between;  
+       
+    }
+
+    .test span {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        white-space: nowrap;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    h1 {
+        font-size: 52px;
+        line-height: 60px;
+        white-space: initial;
+    } 
+
+    .elevator {
+        padding-top:42px;
+        z-index:999;
+        
+    }
+  } 
+
+
 /******** OUR SERVICES SECTION ***********/
 
 
@@ -115,9 +577,13 @@ section#services {
 .containerservices {
     width: 100%;
     left: 0px;
-    top: 1040px;
+    /* top: 1040px; */
     text-align: center;
     
+}
+
+.containerservices img {
+    padding-top: 25px;
 }
 
 .containerservices span {
@@ -137,7 +603,7 @@ section#services {
 
 h2 { 
     height: 53px;
-    top: 1073px;
+    /* top: 1073px; */
     white-space: nowrap;
     font-family: 'Roboto';
     font-style: normal;
@@ -194,6 +660,178 @@ h2 {
 
 }
 
+/* RULES FOR 375PX SCREEN */
+
+@media screen and (max-width: 375px) {
+    .rectangle2 {
+        max-width: 375px;
+        left: 0px;
+    }
+    
+    .containerservices img {
+        padding-top: 0px;
+    }
+
+    .containerservices span {   
+        font-size: 16px;
+        line-height: 19px;
+        white-space: initial;
+    }
+    
+    h2 { 
+        font-size: 24px;
+        line-height: 28px;
+        white-space: initial;
+    }
+
+    .buttonCatalog {
+        display: flex;
+        padding-top: 20px; 
+        height: 106px;
+        /* padding-bottom: 0px;  */
+        background-color: rgba(0, 0, 0, 0.69);
+    }
+    .buttonCatalog .catalog {
+        display: flex;
+        
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 0px;
+    }
+    
+    .img1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .container2 span {
+        padding-top: 46px;
+        padding-bottom: 46px;
+        color: #FFFFFF;
+    }
+
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .rectangle2 {
+        
+        max-width: 100%;
+        left: 0px;
+    }
+    
+    .containerservices img {
+        padding-top: 0px;
+    }
+
+    .containerservices span {   
+        font-size: 20px;
+        line-height: 25px;
+        white-space: initial;
+    }
+    
+    h2 { 
+        font-size: 28px;
+        line-height: 32px;
+        white-space: initial;
+    }
+
+    .buttonCatalog .catalog {
+        display: flex;
+        
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 0px;
+    }
+    
+    .img1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    
+    .container2 span {
+        padding-top: 46px;
+        padding-bottom: 46px;
+        color: #FFFFFF;
+    }
+
+}
+
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .rectangle2 {
+        
+        max-width: 100%;
+        left: 0px;
+    }
+    
+    .containerservices img {
+        padding-top: 0px;
+    }
+
+    .containerservices span {   
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    h2 { 
+        font-size: 38px;
+        line-height: 45px
+    }
+
+    .buttonCatalog .catalog {
+        display: flex;
+        
+    }
+    
+    .container2 {
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* justify-items: center; */
+        /* align-items: center; */
+        /* text-align: center; */
+        padding-top: 10px;
+    }
+    
+    .img1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    
+    .container2 span {
+        padding-top: 46px;
+        padding-bottom: 46px;
+        color: #FFFFFF;
+    }
+
+}
+
+
 /******** END OUR SERVICES SECTION ***********/
 
 /************ TEXT SECTION *****************/
@@ -203,13 +841,16 @@ h2 {
     flex-direction: row;
     margin-top: 80px;
     margin-bottom: 80px;
+    justify-content: space-between;
+    margin-right: 77px;
 
 }
 
 .textsection {
     
     width: 50%;
-    margin-left: 100px;
+    margin-left: 75px;
+    margin-right: 87px;
     align-self: center;
     
 }
@@ -235,10 +876,11 @@ h2 {
     color: #000000;
 }
 
-.textsection img {
-    width: 50%;
-    margin-right: 50px;
-    padding-right: 77px;
+.elevatorImg .img {
+    width: 100%;
+    height: auto !important;
+    /* max-height: 50%; */
+
 }
 
 h3 {
@@ -250,6 +892,147 @@ h3 {
     /* Sublight Engines/Black */
     color: #292929;
 }
+
+/* RULES FOR 375PX SCREEN */
+
+@media screen and (max-width: 375px) {
+    .text {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        justify-content: center;
+        margin-right: 0px;
+        padding: 0 24px 0 24px;;
+    }
+    
+    .textsection {
+        width: 100%;
+    }
+    
+    .textsection span {
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 23px;
+        white-space: initial;
+    }
+    
+    .textsection p {
+        font-size: 16px;
+    }
+    
+    .elevatorImg img {
+        max-width: 100%;
+        padding-top: 54px;
+        padding-bottom: 24px;
+    }
+    
+    h3 {
+        padding-bottom: 15px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .text {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .textsection {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .textsection span {
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    
+    .textsection p {
+        width: 90%;
+        font-size: 16px;
+        padding-left: 40px;
+        
+    }
+    
+    .elevatorImg img {
+        max-width: 100%;
+        padding-top: 54px;
+        padding-bottom: 24px;
+    }
+    
+    h3 {
+        padding-bottom: 15px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .text {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        margin-top: 20px;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+       
+    }
+    
+    .textsection {
+        width: 100%;
+        text-align: left;
+        justify-content: left;
+        padding-right: 0px;
+    }
+    
+    .textsection span {
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 28px;
+        
+    }
+    
+    .textsection p {
+        max-width: 100%;
+        font-size: 18px;
+        padding-left: 0px;
+        
+    }
+    
+    .elevatorImg {
+        display: flex;
+        width: 100%
+}
+
+    .elevatorImg img {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        
+    }
+    
+    h3 {
+        padding-bottom: 15px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
 
 /*********** END TEXT SECTION **************/
 
@@ -282,6 +1065,7 @@ h3 {
     text-transform: uppercase;
     top: 2563px;
     color: #FFFFFF;
+    padding-top: 68px;
 }
 
 h4 {  
@@ -294,19 +1078,339 @@ h4 {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding-bottom: 25px;
 }
 
-.img {
+.productImg {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
     padding-top: 80px;
 }
+
+.productImg .safety {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .cab {
+    
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .door {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .mechanics {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+}
+
+.productImg .hoistway {
+    width: 100%;
+    max-width: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 .button {
     text-align: center;
     padding-top: 70px;
 }
+
+
+/* RULES FOR 375PX SCREEN */
+
+@media screen and (max-width: 375px) {
+    
+    .wrapper span {
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 14px;
+        white-space: initial;
+    }
+    
+    h4 {  
+        white-space: nowrap;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 38px;
+        white-space: initial;
+    }
+    
+    .productImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-top: 43px;
+    }
+
+    .productImg .safety {
+        /* max-width: 100%; */
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .cab {
+        /* max-width: 100%; */
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .door {
+        /* max-width: 100%; */
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .mechanics {
+        /* max-width: 100%; */
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .hoistway {
+        /* max-width: 100%; */
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .button {
+        display: none;
+        text-align: center;
+        padding-top: 70px;
+    }
+    
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    
+    .wrapper span {
+        font-size: 20px;
+        line-height: 23px;
+        padding-bottom: 20px;
+        white-space: initial;
+    }
+    
+    h4 {  
+        white-space: nowrap;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 38px;
+        
+    }
+    
+    .productImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .productImg .safety {
+        max-width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .cab {
+        max-width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .door {
+        max-width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .mechanics {
+        max-width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .hoistway {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .button {
+        display: none;
+        text-align: center;
+        padding-top: 70px;
+    }
+    
+.firstRow {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+}
+
+.secondRow {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+}
+
+.thirdRow {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+}
+
+}
+
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    
+    .wrapper span {
+        font-size: 20px;
+        line-height: 23px;
+        padding: 20px;
+    }
+    
+    h4 {  
+        white-space: nowrap;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 38px;
+        
+    }
+    
+    .productImg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        padding-top: 50px;
+    }
+
+    .inline {
+        display: inline-flex;
+        flex-direction: row;
+        max-width: 100%
+
+    }
+
+    .productImg .safety {
+        max-width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .cab {
+        max-width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .door {
+        max-width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .mechanics {
+        max-width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .hoistway {
+        max-width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .button {
+        display: none;
+        text-align: center;
+        padding-top: 70px;
+    }
+    
+.firstRow {
+        display: inline-flex;
+        width: 80%;
+        padding-left: 0px;
+        justify-content: space-evenly;
+}
+
+.secondRow {
+        display: inline-flex;
+        width: 80%;
+        padding-left: 25px;
+        justify-content: space-evenly;
+}
+
+.thirdRow {
+        display: inline-flex;
+        width: 80%;
+        padding-bottom: 32px;
+        padding-left: 45px;
+        justify-content: center;
+}
+
+}
+
+
 /************ END PRODUCTS SECTION ************/
 
 
@@ -390,6 +1494,8 @@ label {
 }
 
 .wrapperform {
+    display: block;
+    width: 100%;
     text-align: center;
 }
 
@@ -406,6 +1512,7 @@ label {
     text-align: center;
     text-transform: uppercase;
     color: #292929;
+    padding-top: 100px;
 }
 
 h5 {  
@@ -418,6 +1525,7 @@ h5 {
     text-align: center;
     text-transform: uppercase;
     color: #FF7630;
+    padding-bottom: 24px;
     
 }
 
@@ -468,6 +1576,9 @@ input[type="text"] {
     padding-left: 20px;
 }
 
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
 
 
 .formbutton {
@@ -485,7 +1596,126 @@ input[type="text"] {
     color: #292929;
 }
 
+/* RULES FOR 375PX SCREEN */
 
+@media screen and (max-width: 375px) {
+    
+    .formulaire .phone {
+        width: 100%;
+    }
+    
+    .formulaire .language {
+        width: 100%;
+    }
+    
+    .formulaire .holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .wrapperform span {
+        display: flex;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        padding-top: 44px;
+        padding-bottom: 14px;
+        white-space: initial;
+    }
+    
+    h5 {  
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 38px; 
+        white-space: initial;
+    }
+    
+    .form-control {
+        width: 340px;
+        height: 52px;        
+    }
+    
+    .form-control-half {
+        
+        width: 340px;
+        height: 52px;
+    }
+    
+    label {
+        line-height: 12px;
+    }
+    
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    
+    .formulaire .phone {
+        width: 100%;
+    }
+    
+    .formulaire .language {
+        width: 100%;
+    }
+    
+    .formulaire .holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .wrapperform span {
+        font-size: 20px;
+        line-height: 23px;
+        padding-top: 44px;
+        padding-bottom: 14px;
+        white-space: initial;
+    }
+    
+    h5 {  
+        font-size: 28px;
+        line-height: 32px;
+        padding-bottom: 38px;
+        
+    }
+    
+    .form-control {
+        width: 340px;
+        height: 52px;        
+    }
+    
+    .form-control-half {
+        
+        width: 340px;
+        height: 52px;
+    }
+    
+    
+    label {
+        line-height: 12px;
+    }
+    
+}/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    
+    .wrapperform span {
+        font-size: 25px;
+        line-height: 29px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    h5 {  
+        font-size: 45px;
+        line-height: 53px;
+        padding-bottom: 38px;
+        
+    }
+    
+}
 /************ END FORM SECTION ************/
 
 
@@ -495,7 +1725,9 @@ input[type="text"] {
     flex-direction: row;
     width: 100%;
     background-color: #292929;
-    width: 100%;
+    /* padding-top: 80px; */
+    justify-content: center;
+
 }
 
 .rectangle8 span {
@@ -504,18 +1736,82 @@ input[type="text"] {
     font-style: normal;
     font-weight: 900;
     font-size: 45px;
-    height: 53px;
-    line-height: 254px;
+    line-height: 53px;
+    /* justify-content: center; */
     color: #FF7630;
-    width: 50%;
-    padding-left: 280px;
+    /* width: 50%; */
+    padding-left: 50px;
+    padding-top: 85px;
+    padding-right: 48px;
 }
 
-.rectangle8 img {
+.cardLogo .logo {
+    display: block;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 287px;
+    /* width: 100%; */
 }
+
+/* RULES FOR 375PX SCREEN */
+
+@media screen and (max-width: 375px) {
+    .rectangle8 {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .rectangle8 span {
+        
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 24px;
+        padding-right: 26px;
+    }
+    
+    .rectangle8 img {
+        padding-top: 26px;
+        padding-bottom: 24px;
+        max-width: 287px;
+        align-content: center;
+    }
+    .cardLogo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .rectangle8 {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .rectangle8 span {
+        
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 24px;
+        padding-right: 26px;
+    }
+    
+    .rectangle8 img {
+        padding-top: 26px;
+        padding-bottom: 24px;
+        max-width: 287px;
+        align-content: center;
+    }
+    .cardLogo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 /************ END CARD SECTION *************/
 
@@ -549,23 +1845,128 @@ input[type="text"] {
     width: 50%;   
 }    
 
+/* RULES FOR 375PX SCREEN */
+
+@media screen and (max-width: 375px) {
+    .address {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    .address span {
+        font-size: 15px;
+        line-height: 18px;
+
+    }
+    
+    .left {
+        text-align: center;
+        margin-left: 0px;
+        width: 100%; 
+        padding-top: 63px;
+        padding-bottom: 45px;
+    }
+    
+    .right {
+        text-align: center;
+        margin-right: 0px;
+        width: 100%;  
+        padding-bottom: 95px; 
+    }    
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .address {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0px;
+    }
+    .address span {
+        font-size: 15px;
+        line-height: 18px;
+
+    }
+    
+    .left {
+        text-align: left;
+        margin-left: 20px;
+        width: 50%; 
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+    
+    .right {
+        text-align: right;
+        margin-right: 20px;
+        width: 50%; 
+        padding-top: 50px; 
+         
+    }    
+}
 
 /************** COPYWRIGTH **********************/
 
 .copyright {
-    
-    width: 100%;
-    display: block;
-    
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     text-align: center;
     color: #292929;
+    padding-top: 86px;
+    padding-bottom: 137px;
 }
+
+/************** MOBILE BUTTON FIXED **********************/
+
+.buttonCatalog {
+    display: none;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.69);
+}
+/* .button {
+    display: none;
+    text-align: center;
+    padding-top: 70px;
+} */
+
+/* RULES FOR 375PX SCREEN */
+
+@media screen and (max-width: 375px) {
+    .buttonCatalog {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    }
+
+    .copyright {
+
+        
+        padding-top: 0px;
+        padding-bottom: 127px;
+    }
+}
+
+/* RULES FOR 768PX SCREEN */
+
+@media screen and (max-width: 768px) {
+    .buttonCatalog {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    }
+}
+
 
   /************ CURSOR ACTIONS ****************/
 
