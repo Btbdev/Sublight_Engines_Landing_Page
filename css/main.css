@@ -177,7 +177,7 @@ body {
         padding-top: 25px;
         padding-left: 20px;
         max-width: 250px;
-        max-height: 37px;
+        max-height: 40px;
     }
 
     .hamburger {
@@ -238,6 +238,104 @@ body {
     }
 }
 
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    /* display the bars of the hamburger menu */
+    /* .bar {  
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    } */
+
+    /* header { */
+        /* justify-content: center;
+        top: 0px;
+        padding: 0 0 0 0; */
+        /* max-height: 68px;
+    } */
+
+    header img {
+        
+        padding-right: 25px;
+        padding-left: 20px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* .hamburger {
+        display: block;
+        padding: 40px 30px 19px;
+        
+    } */
+    
+    /* to make an x in the hamburger */
+    /* .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    } */
+
+    /* .nav-menu {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        left: -100%;
+        top: 88px;
+        gap: 0;
+        background-color: rgba(0, 0, 0, 0.69);
+        width: 100%;
+        transition: 0.3s;
+        margin-bottom: 0px;        
+    } */
+
+    header nav ul li {
+        padding-right: 20px;
+        
+    }
+
+        .nav-link {
+        display: flex;
+        /* text-align: center;  */
+        align-self: center;
+        width: 100%;
+        /* justify-content: space-evenly; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* padding-left: 50px; */
+        
+    }
+
+    /* .nav-item {
+
+        padding-right: 50px; */
+        /* margin: 5px 1px; */
+        /* border-top: solid 0.1px white; */
+        /* border-bottom: solid 0.1px white; */
+        /* width: 100%;
+        height: 35px;
+        padding-right: 0px; */
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
+    /* } */
+
+    /* .nav-menu.active {
+        left: 0;
+    } */
+}
+
+
 /* à voir si je garde */
   header img {
     margin-right: auto;
@@ -280,7 +378,7 @@ body {
   section#hero {
     /* display: flex; */
     background: url('images/bkg_1\ 1.png') no-repeat center center/cover;
-    /* background-size: cover; */
+    background-size: cover;
     width: 100%;
     height: 960px;
     /* padding-bottom: 72px; */
@@ -342,7 +440,7 @@ section#services {
     section#hero {
         /* display: flex; */
         background: url('images/bkg_1 1.png') no-repeat cover ;
-        /* background-size: cover; */
+        background-size: cover;
         width: 100%;
         max-height: 554px;
         padding-bottom: 325px;
@@ -432,6 +530,50 @@ section#services {
     }
   } 
 
+  /* RULES FOR 1280PX SCREEN */
+  
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    
+    section#hero {
+        /* display: flex; */
+        background: url('images/bkg_1 1.png') no-repeat cover ;
+        /* background-size: cover; */
+        width: 100%;
+        max-height: 554px;
+        padding-bottom: 375px;
+    }  
+
+    .test {
+        
+        text-align: center;
+        width: 100%;
+        display: block;
+        justify-content: space-between;  
+       
+    }
+
+    .test span {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        white-space: nowrap;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    h1 {
+        font-size: 52px;
+        line-height: 60px;
+        white-space: initial;
+    } 
+
+    .elevator {
+        padding-top:42px;
+        z-index:999;
+        
+    }
+  } 
 
 
 /******** OUR SERVICES SECTION ***********/
@@ -644,6 +786,59 @@ h2 {
 
 }
 
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .rectangle2 {
+        
+        max-width: 100%;
+        left: 0px;
+    }
+    
+    .containerservices img {
+        padding-top: 0px;
+    }
+
+    .containerservices span {   
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    h2 { 
+        font-size: 38px;
+        line-height: 45px
+    }
+
+    .buttonCatalog .catalog {
+        display: flex;
+        
+    }
+    
+    .container2 {
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* justify-items: center; */
+        /* align-items: center; */
+        /* text-align: center; */
+        padding-top: 10px;
+    }
+    
+    .img1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    
+    .container2 span {
+        padding-top: 46px;
+        padding-bottom: 46px;
+        color: #FFFFFF;
+    }
+
+}
 
 
 /******** END OUR SERVICES SECTION ***********/
@@ -782,6 +977,59 @@ h3 {
         max-width: 100%;
         padding-top: 54px;
         padding-bottom: 24px;
+    }
+    
+    h3 {
+        padding-bottom: 15px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .text {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .textsection {
+        width: 100%;
+        text-align: left;
+        justify-content: left;
+        padding-right: 0px;
+    }
+    
+    .textsection span {
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .textsection p {
+        max-width: 100%;
+        font-size: 18px;
+        padding-left: 0px;
+        
+    }
+    
+    .elevatorImg {
+        display: flex;
+        width: 100%
+}
+
+    .elevatorImg img {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        
     }
     
     h3 {
@@ -1017,6 +1265,108 @@ h4 {
 
 }
 
+/* RULES FOR 1280PX SCREEN */
+
+@media screen and (min-width: 786px) and (max-width: 1280px) {
+    
+    .wrapper span {
+        font-size: 20px;
+        line-height: 23px;
+        padding: 20px;
+    }
+    
+    h4 {  
+        white-space: nowrap;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 38px;
+        
+    }
+    
+    .productImg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        padding-top: 50px;
+    }
+
+    .inline {
+        display: inline-flex;
+        flex-direction: row;
+        max-width: 100%
+
+    }
+
+    .productImg .safety {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .cab {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .door {
+        max-width: 50%;
+        padding-left: 75px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .mechanics {
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+
+    .productImg .hoistway {
+        max-width: 50%;
+        padding-left: 45px;
+        padding-right: 0px;
+    }
+
+    .button {
+        display: none;
+        text-align: center;
+        padding-top: 70px;
+    }
+    
+.firstRow {
+        display: inline-flex;
+        width: 100%;
+        padding-left: 50px;
+        /* justify-content: center; */
+}
+
+.secondRow {
+        display: inline-flex;
+        width: 100%;
+        /* justify-content: center; */
+}
+
+.thirdRow {
+        display: inline;
+        width: 100%;
+        padding-bottom: 25px;
+        /* justify-content: center; */
+}
+
+}
+
 
 /************ END PRODUCTS SECTION ************/
 
@@ -1101,6 +1451,8 @@ label {
 }
 
 .wrapperform {
+    display: block;
+    width: 100%;
     text-align: center;
 }
 
@@ -1218,6 +1570,8 @@ input:invalid {
     }
     
     .wrapperform span {
+        display: flex;
+        max-width: 100%;
         font-size: 16px;
         line-height: 19px;
         padding-top: 44px;
@@ -1295,9 +1649,25 @@ input:invalid {
         line-height: 12px;
     }
     
+}/* RULES FOR 768PX SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    
+    .wrapperform span {
+        font-size: 25px;
+        line-height: 29px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    h5 {  
+        font-size: 45px;
+        line-height: 53px;
+        padding-bottom: 38px;
+        
+    }
+    
 }
-
-
 /************ END FORM SECTION ************/
 
 
@@ -1496,7 +1866,7 @@ input:invalid {
     line-height: 12px;
     text-align: center;
     color: #292929;
-    padding-top: 0px;
+    padding-top: 86px;
     padding-bottom: 137px;
 }
 
@@ -1524,6 +1894,13 @@ input:invalid {
     width: 100%;
     height: auto;
     padding-bottom: 40px;
+    }
+
+    .copyright {
+
+        
+        padding-top: 0px;
+        padding-bottom: 127px;
     }
 }
 
