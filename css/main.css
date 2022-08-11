@@ -1,10 +1,10 @@
 /* CSS STRUCTURE TEMPLATE */
 
 /* SCREEN DISPLAY RULES */
-/* 375px + --- mobiles  */ 
-/* 768px + --- tablets  */
-/* 1280px + --- laptop  */
-/* 1920px + --- desktop */
+/* 375px - --- mobiles  */ 
+/* 768px - --- tablets  */
+/* 1280px - --- laptop  */
+/* 1280px + --- desktop */
 
 * {
     padding: 0;
@@ -1509,8 +1509,9 @@ input[type="text"] {
     padding-left: 20px;
 }
 
+
 input:invalid {
-    box-shadow: 0 0 5px 1px red;
+    box-shadow: 0 0 5px 1px #FF7630;
 }
 
 
