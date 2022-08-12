@@ -23,6 +23,7 @@
 
 ************* https://sublightengines.herokuapp.com/ *************
 
+* Here are some visual aspects of the responsive website and interactivness of the form
 
 | Mobile version at 375 px |
 
