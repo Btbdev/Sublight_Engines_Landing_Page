@@ -22,3 +22,8 @@
 * Our website has moved ! To get the best products and services for your elevator cab controls, please visit :
 
 ************* https://sublightengines.herokuapp.com/ *************
+
+
+
+
+<img src="images\display_375px.png" alt="375px"/>
