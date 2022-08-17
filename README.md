@@ -16,8 +16,8 @@
 * An EmailjS application has been set so that all form submission will generate an email including relevant informations from the form.
 
               *** Login for EmailjS ***
-        * user : mathieubernier27@gmail.com
-        * password : 27But923
+        * user : *******************
+        * password : *************
 
 * Our website has moved ! To get the best products and services for your elevator cab controls, please visit :
 
